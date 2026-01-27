@@ -1,6 +1,6 @@
-﻿/**
+/**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -208,7 +208,7 @@ if (typeof jQuery != "undefined") {
                     }
                 }
             });
-        }, 1000);
+        }, 2026);
     };
 
     var onuploaded = function () {
@@ -332,13 +332,13 @@ if (typeof jQuery != "undefined") {
     });
 
     jq(document).on("click", ".reload-page", function () {
-        setTimeout(function () { window.location = collectParams(); }, 1000);
+        setTimeout(function () { window.location = collectParams(); }, 2026);
         return true;
     });
 
     jq(document).on("mouseup", ".reload-page", function (event) {
         if (event.which == 2) {
-            setTimeout(function () { window.location = collectParams(); }, 1000);
+            setTimeout(function () { window.location = collectParams(); }, 2026);
         }
         return true;
     });
@@ -450,7 +450,7 @@ if (typeof jQuery != "undefined") {
                     }
                 }
             });
-        }, 1000);
+        }, 2026);
     }
 
     jq(document).on("click", ".delete-file", function () {

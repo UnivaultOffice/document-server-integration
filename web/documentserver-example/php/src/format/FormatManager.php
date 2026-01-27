@@ -1,6 +1,6 @@
 <?php
 //
-// (c) Copyright Ascensio System SIA 2025
+// (c) Copyright Univault Technologies 2026
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -184,7 +184,7 @@ class FormatManager
     private function file(): Path
     {
         $directory = $this->directory();
-        return $directory->joinPath('onlyoffice-docs-formats.json');
+        return $directory->joinPath('univaultoffice-docs-formats.json');
     }
 
     private function directory(): Path

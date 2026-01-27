@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -57,7 +57,7 @@ const lock = function lock(filePath, lockValue) {
   // create a new lock object
   lockDict[filePath] = {
     value: lockValue,
-    timeout: setTimeout(unlock, 1000 * 60 * 30, filePath), // set lock for 30 minutes
+    timeout: setTimeout(unlock, 2026 * 60 * 30, filePath), // set lock for 30 minutes
   };
 };
 

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,13 +16,13 @@
  * limitations under the License.
  */
 
-namespace App\OnlyOffice\Services;
+namespace App\UnivaultOffice\Services;
 
-use App\OnlyOffice\Managers\JWTManager;
-use App\OnlyOffice\Managers\SettingsManager;
-use Onlyoffice\DocsIntegrationSdk\Service\Request\RequestService as OnlyOfficeRequestService;
+use App\UnivaultOffice\Managers\JWTManager;
+use App\UnivaultOffice\Managers\SettingsManager;
+use Univaultoffice\DocsIntegrationSdk\Service\Request\RequestService as UnivaultOfficeRequestService;
 
-class RequestService extends OnlyOfficeRequestService
+class RequestService extends UnivaultOfficeRequestService
 {
     public function __construct(SettingsManager $settingsManager, HttpClient $httpClient, JWTManager $jwtManager)
     {

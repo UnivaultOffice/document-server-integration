@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@
  *
  */
 
-package com.onlyoffice.integration.sdk.manager;
+package com.univaultoffice.integration.sdk.manager;
 
-import com.onlyoffice.integration.documentserver.storage.FileStorageMutator;
-import com.onlyoffice.integration.documentserver.storage.FileStoragePathBuilder;
-import com.onlyoffice.manager.document.DefaultDocumentManager;
-import com.onlyoffice.manager.settings.SettingsManager;
+import com.univaultoffice.integration.documentserver.storage.FileStorageMutator;
+import com.univaultoffice.integration.documentserver.storage.FileStoragePathBuilder;
+import com.univaultoffice.manager.document.DefaultDocumentManager;
+import com.univaultoffice.manager.settings.SettingsManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -37,8 +37,8 @@ import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import static com.onlyoffice.integration.documentserver.util.Constants.KILOBYTE_SIZE;
-import static com.onlyoffice.integration.documentserver.util.Constants.MAX_KEY_LENGTH;
+import static com.univaultoffice.integration.documentserver.util.Constants.KILOBYTE_SIZE;
+import static com.univaultoffice.integration.documentserver.util.Constants.MAX_KEY_LENGTH;
 
 @Component
 public class DocumentMangerImpl extends DefaultDocumentManager implements DocumentManager {

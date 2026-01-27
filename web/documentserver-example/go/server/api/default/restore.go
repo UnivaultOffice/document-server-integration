@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,9 +27,9 @@ import (
 	"path"
 	"time"
 
-	"github.com/ONLYOFFICE/document-server-integration/server/models"
-	"github.com/ONLYOFFICE/document-server-integration/server/shared"
-	"github.com/ONLYOFFICE/document-server-integration/utils"
+	"github.com/UnivaultOffice/document-server-integration/server/models"
+	"github.com/UnivaultOffice/document-server-integration/server/shared"
+	"github.com/UnivaultOffice/document-server-integration/utils"
 )
 
 func (srv *DefaultServerEndpointsHandler) Restore(w http.ResponseWriter, r *http.Request) {
@@ -72,7 +72,7 @@ func (srv *DefaultServerEndpointsHandler) Restore(w http.ResponseWriter, r *http
 		return
 	}
 	rootPath, _ := srv.GetRootFolder()
-	historyPath := path.Join(rootPath, fileName+shared.ONLYOFFICE_HISTORY_POSTFIX)
+	historyPath := path.Join(rootPath, fileName+shared.UNIVAULTOFFICE_HISTORY_POSTFIX)
 	newVersion := srv.HistoryManager.CountVersion(historyPath)
 	versionPath := path.Join(historyPath, version, "prev"+utils.GetFileExt(fileName, false))
 	newVersionPath := path.Join(historyPath, fmt.Sprint(newVersion))
@@ -150,7 +150,7 @@ func (srv *DefaultServerEndpointsHandler) Restore(w http.ResponseWriter, r *http
 		ServerVersion: srv.config.Version,
 		Changes: []models.Changes{
 			{
-				Created: time.Now().UTC().Format("2006-02-1 15:04:05"),
+				Created: time.Now().UTC().Format("2025-02-1 15:04:05"),
 				User: models.User{
 					Id:       changes.User.Id,
 					Username: changes.User.Username,

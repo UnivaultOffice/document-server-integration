@@ -1,7 +1,7 @@
 <?php
 
 /**
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,8 +22,8 @@ use App\Exceptions\ConversionError;
 use App\Exceptions\ConversionNotComplete;
 use App\Helpers\Path\PathInfo;
 use App\Helpers\URL\FileURL;
-use App\OnlyOffice\Managers\FormatManager;
-use App\OnlyOffice\Miscellaneous\ConvertRequest as ConvertRequestAdapter;
+use App\UnivaultOffice\Managers\FormatManager;
+use App\UnivaultOffice\Miscellaneous\ConvertRequest as ConvertRequestAdapter;
 use Exception;
 use Illuminate\Support\Str;
 

@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,23 +16,23 @@
  *
  */
 
-package com.onlyoffice.integration.controllers;
+package com.univaultoffice.integration.controllers;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.onlyoffice.integration.documentserver.models.enums.Action;
-import com.onlyoffice.integration.documentserver.storage.FileStoragePathBuilder;
-import com.onlyoffice.integration.dto.Mentions;
-import com.onlyoffice.integration.dto.Protect;
-import com.onlyoffice.integration.dto.UserInfo;
-import com.onlyoffice.integration.entities.User;
-import com.onlyoffice.integration.sdk.manager.UrlManager;
-import com.onlyoffice.integration.sdk.service.ConfigService;
-import com.onlyoffice.integration.services.UserServices;
-import com.onlyoffice.manager.security.JwtManager;
-import com.onlyoffice.manager.settings.SettingsManager;
-import com.onlyoffice.model.documenteditor.Config;
-import com.onlyoffice.model.documenteditor.config.document.Type;
+import com.univaultoffice.integration.documentserver.models.enums.Action;
+import com.univaultoffice.integration.documentserver.storage.FileStoragePathBuilder;
+import com.univaultoffice.integration.dto.Mentions;
+import com.univaultoffice.integration.dto.Protect;
+import com.univaultoffice.integration.dto.UserInfo;
+import com.univaultoffice.integration.entities.User;
+import com.univaultoffice.integration.sdk.manager.UrlManager;
+import com.univaultoffice.integration.sdk.service.ConfigService;
+import com.univaultoffice.integration.services.UserServices;
+import com.univaultoffice.manager.security.JwtManager;
+import com.univaultoffice.manager.settings.SettingsManager;
+import com.univaultoffice.model.documenteditor.Config;
+import com.univaultoffice.model.documenteditor.config.document.Type;
 import lombok.SneakyThrows;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,7 +52,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Optional;
 
-import static com.onlyoffice.integration.documentserver.util.Constants.ANONYMOUS_USER_ID;
+import static com.univaultoffice.integration.documentserver.util.Constants.ANONYMOUS_USER_ID;
 
 @CrossOrigin("*")
 @Controller
@@ -113,7 +113,7 @@ public class EditorController {
 
         Optional<User> optionalUser = userService.findUserById(Integer.parseInt(uid));
 
-        // if the user is not present, return the ONLYOFFICE start page
+        // if the user is not present, return the UNIVAULTOFFICE start page
         if (!optionalUser.isPresent()) {
             return "index.html";
         }

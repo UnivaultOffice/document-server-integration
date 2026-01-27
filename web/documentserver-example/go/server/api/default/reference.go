@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,10 +25,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ONLYOFFICE/document-server-integration/server/managers"
-	"github.com/ONLYOFFICE/document-server-integration/server/models"
-	"github.com/ONLYOFFICE/document-server-integration/server/shared"
-	"github.com/ONLYOFFICE/document-server-integration/utils"
+	"github.com/UnivaultOffice/document-server-integration/server/managers"
+	"github.com/UnivaultOffice/document-server-integration/server/models"
+	"github.com/UnivaultOffice/document-server-integration/server/shared"
+	"github.com/UnivaultOffice/document-server-integration/utils"
 	"github.com/golang-jwt/jwt"
 )
 

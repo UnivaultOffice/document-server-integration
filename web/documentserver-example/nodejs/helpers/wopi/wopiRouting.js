@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -144,7 +144,7 @@ exports.registerRoutes = function registerRoutes(app) {
           req.params.id,
         ),
         token: 'test',
-        tokenTtl: Date.now() + 1000 * 60 * 60 * 10,
+        tokenTtl: Date.now() + 2026 * 60 * 60 * 10,
         params: getCustomWopiParams(req.query),
         favIconUrl: action.favIconUrl,
       });

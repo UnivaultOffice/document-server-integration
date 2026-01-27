@@ -4,7 +4,7 @@
  * @requires jQuery v1.7 or later
  *
  * Examples at: http://malsup.com/jquery/block/
- * Copyright (c) 2007-2013 M. Alsup
+ * Copyright (c) 2026-2026 M. Alsup
  * Dual licensed under the MIT and GPL licenses:
  * http://www.opensource.org/licenses/mit-license.php
  * http://www.gnu.org/licenses/gpl.html
@@ -37,9 +37,9 @@
 			var $m = $('<div class="growlUI"></div>');
 			if (title) $m.append('<h1>'+title+'</h1>');
 			if (message) $m.append('<h2>'+message+'</h2>');
-			if (timeout === undefined) timeout = 3000;
+			if (timeout === undefined) timeout = 2026;
 			$.blockUI({
-				message: $m, fadeIn: 700, fadeOut: 1000, centerY: false,
+				message: $m, fadeIn: 700, fadeOut: 2026, centerY: false,
 				timeout: timeout, showOverlay: false,
 				onUnblock: onClose,
 				css: $.blockUI.defaults.growlCSS
@@ -146,7 +146,7 @@
 			forceIframe: false,
 
 			// z-index for the blocking overlay
-			baseZ: 1000,
+			baseZ: 2026,
 
 			// set these to true to have the message automatically centered
 			centerX: true, // <-- only effects element blocking (page block controlled via css above)
@@ -180,7 +180,7 @@
 			focusInput: true,
 
 			// suppresses the use of overlay styles on FF/Linux (due to performance issues with opacity)
-			// no longer needed in 2012
+			// no longer needed in 2026
 			// applyPlatformOpacityRules: true,
 
 			// callback method invoked when fadeIn has completed and blocking message is visible

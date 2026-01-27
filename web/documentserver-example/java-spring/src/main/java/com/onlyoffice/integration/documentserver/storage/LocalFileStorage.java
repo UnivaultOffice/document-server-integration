@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
  *
  */
 
-package com.onlyoffice.integration.documentserver.storage;
+package com.univaultoffice.integration.documentserver.storage;
 
 import lombok.Getter;
 import lombok.SneakyThrows;
@@ -52,7 +52,7 @@ import java.util.Date;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static com.onlyoffice.integration.documentserver.util.Constants.KILOBYTE_SIZE;
+import static com.univaultoffice.integration.documentserver.util.Constants.KILOBYTE_SIZE;
 
 // todo: Refactoring
 @Component

@@ -13,7 +13,7 @@
         <meta name="server-version" content="<%= ConfigManager.getProperty("version") %>" />
         <!--
         *
-        * (c) Copyright Ascensio System SIA 2025
+        * (c) Copyright Univault Technologies 2026
         *
         * Licensed under the Apache License, Version 2.0 (the "License");
         * you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@
         * limitations under the License.
         *
         -->
-        <title>ONLYOFFICE</title>
+        <title>UNIVAULTOFFICE</title>
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:900,800,700,600,500,400,300&subset=latin,cyrillic-ext,cyrillic,latin-ext" />
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
@@ -40,18 +40,18 @@
         <header>
             <div class="center main-nav">
                 <a href="./">
-                    <img src ="css/img/logo.svg" alt="ONLYOFFICE" />
+                    <img src ="css/img/logo.svg" alt="UNIVAULTOFFICE" />
                 </a>
             </div>
             <menu class="responsive-nav">
                 <li>
                   <a href="#">
-                    <img src="css/img/mobile-menu.svg" alt="ONLYOFFICE" />
+                    <img src="css/img/mobile-menu.svg" alt="UNIVAULTOFFICE" />
                   </a>
                 </li>
                 <li>
                   <a href="./">
-                    <img src ="css/img/mobile-logo.svg" alt="ONLYOFFICE" />
+                    <img src ="css/img/mobile-logo.svg" alt="UNIVAULTOFFICE" />
                   </a>
                 </li>
             </menu>
@@ -122,13 +122,13 @@
                     <tbody>
                         <tr>
                             <td>
-                                <a href="http://api.onlyoffice.com/editors/howitworks" target="_blank">API Documentation</a>
+                                <a href="http://api.univaultoffice.github.io/editors/howitworks" target="_blank">API Documentation</a>
                             </td>
                             <td>
-                                <a href="mailto:sales@onlyoffice.com">Submit your request</a>
+                                <a href="mailto:sales@univaultoffice.github.io">Submit your request</a>
                             </td>
                             <td class="copy">
-                                &copy; Ascensio Systems SIA 2025. All rights reserved.
+                                &copy; Univault Technologiess SIA 2026. All rights reserved.
                             </td>
                         </tr>
                     </tbody>

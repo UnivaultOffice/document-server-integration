@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,10 +26,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ONLYOFFICE/document-server-integration/config"
-	"github.com/ONLYOFFICE/document-server-integration/server/managers"
-	"github.com/ONLYOFFICE/document-server-integration/server/shared"
-	"github.com/ONLYOFFICE/document-server-integration/utils"
+	"github.com/UnivaultOffice/document-server-integration/config"
+	"github.com/UnivaultOffice/document-server-integration/server/managers"
+	"github.com/UnivaultOffice/document-server-integration/server/shared"
+	"github.com/UnivaultOffice/document-server-integration/utils"
 	"github.com/golang-jwt/jwt"
 	"go.uber.org/zap"
 )
@@ -57,28 +57,28 @@ func (cm DefaultConversionManager) GetFileType(filename string) string {
 	exts := cm.specification.ExtensionTypes
 
 	if utils.IsInList(ext, exts.Pdf) {
-		return shared.ONLYOFFICE_PDF
+		return shared.UNIVAULTOFFICE_PDF
 	}
 	if utils.IsInList(ext, exts.Document) {
-		return shared.ONLYOFFICE_DOCUMENT
+		return shared.UNIVAULTOFFICE_DOCUMENT
 	}
 	if utils.IsInList(ext, exts.Spreadsheet) {
-		return shared.ONLYOFFICE_SPREADSHEET
+		return shared.UNIVAULTOFFICE_SPREADSHEET
 	}
 	if utils.IsInList(ext, exts.Presentation) {
-		return shared.ONLYOFFICE_PRESENTATION
+		return shared.UNIVAULTOFFICE_PRESENTATION
 	}
 
-	return shared.ONLYOFFICE_DOCUMENT
+	return shared.UNIVAULTOFFICE_DOCUMENT
 }
 
 func (cm DefaultConversionManager) GetInternalExtension(fileType string) string {
 	switch fileType {
-	case shared.ONLYOFFICE_DOCUMENT:
+	case shared.UNIVAULTOFFICE_DOCUMENT:
 		return ".docx"
-	case shared.ONLYOFFICE_SPREADSHEET:
+	case shared.UNIVAULTOFFICE_SPREADSHEET:
 		return ".xlsx"
-	case shared.ONLYOFFICE_PRESENTATION:
+	case shared.UNIVAULTOFFICE_PRESENTATION:
 		return ".pptx"
 	default:
 		return ".docx"

@@ -92,7 +92,7 @@
     <!-- Checks for Headers                                -->
     <!-- See https://checkstyle.org/config_header.html   -->
      <module name="Header">
-       <property name="headerFile" value="onlyoffice.header"/>
+       <property name="headerFile" value="univaultoffice.header"/>
        <property name="fileExtensions" value="java"/>
      </module>
 

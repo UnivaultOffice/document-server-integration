@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -107,7 +107,7 @@ public final class FormatManager {
     private Path file() throws URISyntaxException {
         return this
             .directory()
-            .resolve("onlyoffice-docs-formats.json");
+            .resolve("univaultoffice-docs-formats.json");
     }
 
     private Path directory() throws URISyntaxException {

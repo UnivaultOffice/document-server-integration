@@ -7,7 +7,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <link rel="icon" href="assets/images/{docType}.ico" type="image/x-icon" />
-    <title>{fileName} - ONLYOFFICE</title>
+    <title>{fileName} - UNIVAULTOFFICE</title>
 
     <style>
         html {

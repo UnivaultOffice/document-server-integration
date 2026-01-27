@@ -1,7 +1,7 @@
 <?php
 
 /**
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@
 namespace App\Http\Controllers;
 
 use App\Helpers\URL\URL;
-use App\OnlyOffice\Managers\SettingsManager;
+use App\UnivaultOffice\Managers\SettingsManager;
 use App\UseCases\Document\Find\FindAllDocumentsQuery;
 use App\UseCases\Document\Find\FindAllDocumentsQueryHandler;
 use App\UseCases\Language\Find\FindAllLanguagesQueryHandler;

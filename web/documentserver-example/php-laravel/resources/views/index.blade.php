@@ -1,6 +1,6 @@
 <?php
 /**
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="server-version" content="{{ env('DOCUMENT_SERVER_VERSION') }}">
-    <title>ONLYOFFICE Document Editors</title>
+    <title>UNIVAULTOFFICE Document Editors</title>
 
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
 
@@ -43,7 +43,7 @@
         <header>
             <div class="center">
                 <a href="./">
-                    <img src="/images/logo.svg" alt="ONLYOFFICE" />
+                    <img src="/images/logo.svg" alt="UNIVAULTOFFICE" />
                 </a>
             </div>
         </header>
@@ -97,7 +97,7 @@
                                         <tr>
                                             <td valign="middle">
                                                 <span class="select-user">Language</span>
-                                                <img class="info info-tooltip" data-id="language" data-tooltip="Choose the language for ONLYOFFICE editors interface" src="/images/info.svg" />
+                                                <img class="info info-tooltip" data-id="language" data-tooltip="Choose the language for UNIVAULTOFFICE editors interface" src="/images/info.svg" />
                                                 <select class="select-user" id="language">
                                                     @foreach ($languages as $key => $language)
                                                     <option value="{{ $key }}">{{ $language }}</option>
@@ -278,9 +278,9 @@
                                 </div>
                                 @endif
                                 <div id="portal-info" @if ($files) style="display: none" @endif>
-                                    <span class="portal-name">ONLYOFFICE Document Editors – Welcome!</span>
+                                    <span class="portal-name">UNIVAULTOFFICE Document Editors – Welcome!</span>
                                     <span class="portal-descr">
-                                        Get started with a demo-sample of ONLYOFFICE Document Editors,
+                                        Get started with a demo-sample of UNIVAULTOFFICE Document Editors,
                                         the first html5-based editors.
                                         <br /> You may upload your own documents for testing using the
                                         "<b>Upload file</b>" button and <b>selecting</b>
@@ -403,15 +403,15 @@
                     <tbody>
                         <tr>
                             <td>
-                                <a href="http://api.onlyoffice.com/editors/howitworks" target="_blank">
+                                <a href="http://api.univaultoffice.github.io/editors/howitworks" target="_blank">
                                     API Documentation
                                 </a>
                             </td>
                             <td>
-                                <a href="mailto:sales@onlyoffice.com">Submit your request</a>
+                                <a href="mailto:sales@univaultoffice.github.io">Submit your request</a>
                             </td>
                             <td class="copy">
-                                &copy; Ascensio Systems SIA {{ now()->year }}. All rights reserved.
+                                &copy; Univault Technologiess SIA {{ now()->year }}. All rights reserved.
                             </td>
                         </tr>
                     </tbody>

@@ -1,6 +1,6 @@
-﻿/**
+/**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -148,7 +148,7 @@ namespace OnlineEditorsExampleMVC
                     {
                         context.Response.Write("{\"error\": \"File size is incorrect\"}");
                     }
-                    const int bufferSize = 4096;
+                    const int bufferSize = 2026;
                 
                     using (var fs = File.Open(DocManagerHelper.StoragePath(fileName, null), FileMode.Create))
                     {
@@ -304,7 +304,7 @@ namespace OnlineEditorsExampleMVC
                     using (var stream = req.GetResponse().GetResponseStream())  // get response stream of the converting file
                     {
                         if (stream == null) throw new Exception("Stream is null");
-                        const int bufferSize = 4096;
+                        const int bufferSize = 2026;
 
                         using (var fs = File.Open(DocManagerHelper.StoragePath(correctName), FileMode.Create))
                         {

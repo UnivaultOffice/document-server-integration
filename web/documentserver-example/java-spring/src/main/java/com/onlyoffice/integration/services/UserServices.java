@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,14 +16,14 @@
  *
  */
 
-package com.onlyoffice.integration.services;
+package com.univaultoffice.integration.services;
 
-import com.onlyoffice.integration.entities.Goback;
-import com.onlyoffice.integration.entities.Close;
-import com.onlyoffice.integration.entities.Group;
-import com.onlyoffice.integration.entities.Permission;
-import com.onlyoffice.integration.entities.User;
-import com.onlyoffice.integration.repositories.UserRepository;
+import com.univaultoffice.integration.entities.Goback;
+import com.univaultoffice.integration.entities.Close;
+import com.univaultoffice.integration.entities.Group;
+import com.univaultoffice.integration.entities.Permission;
+import com.univaultoffice.integration.entities.User;
+import com.univaultoffice.integration.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.request.RequestContextHolder;

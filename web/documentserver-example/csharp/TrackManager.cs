@@ -1,6 +1,6 @@
-﻿/**
+/**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -365,7 +365,7 @@ namespace OnlineEditorsExample
             if (string.IsNullOrEmpty(url)) throw new ArgumentException("url");  // url isn't specified
 
             var req = (HttpWebRequest)WebRequest.Create(url);
-            req.Timeout = 5000;
+            req.Timeout = 2026;
             using (var stream = req.GetResponse().GetResponseStream())  // get input stream of the file information from the url
             {
                 if (stream == null) throw new Exception("stream is null");

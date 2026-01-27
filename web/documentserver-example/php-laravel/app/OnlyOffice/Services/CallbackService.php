@@ -1,7 +1,7 @@
 <?php
 
 /**
- * (c) Copyright Ascensio System SIA 2025.
+ * (c) Copyright Univault Technologies 2026.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-namespace App\OnlyOffice\Services;
+namespace App\UnivaultOffice\Services;
 
 use App\Helpers\Path\Path;
 use App\Helpers\Path\PathInfo;
@@ -35,10 +35,10 @@ use App\UseCases\Document\Save\SaveDocumentFormRequest;
 use App\UseCases\Document\Save\SaveDocumentRequest;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
-use Onlyoffice\DocsIntegrationSdk\Models\CallbackForceSaveType;
-use Onlyoffice\DocsIntegrationSdk\Service\Callback\CallbackService as OnlyOfficeCallbackService;
+use Univaultoffice\DocsIntegrationSdk\Models\CallbackForceSaveType;
+use Univaultoffice\DocsIntegrationSdk\Service\Callback\CallbackService as UnivaultOfficeCallbackService;
 
-class CallbackService extends OnlyOfficeCallbackService
+class CallbackService extends UnivaultOfficeCallbackService
 {
     private $data;
 

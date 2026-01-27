@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@
  *
  */
 
-package com.onlyoffice.integration.sdk.service;
+package com.univaultoffice.integration.sdk.service;
 
-import com.onlyoffice.integration.documentserver.models.enums.Action;
-import com.onlyoffice.model.documenteditor.Config;
-import com.onlyoffice.model.documenteditor.config.document.Type;
+import com.univaultoffice.integration.documentserver.models.enums.Action;
+import com.univaultoffice.model.documenteditor.Config;
+import com.univaultoffice.model.documenteditor.config.document.Type;
 
-public interface ConfigService extends com.onlyoffice.service.documenteditor.config.ConfigService {
+public interface ConfigService extends com.univaultoffice.service.documenteditor.config.ConfigService {
     Config createConfig(String fileId, Action action, Type type);
 }

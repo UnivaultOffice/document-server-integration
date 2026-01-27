@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,34 +16,34 @@
  *
  */
 
-package com.onlyoffice.integration.sdk.service;
+package com.univaultoffice.integration.sdk.service;
 
 import com.google.gson.Gson;
-import com.onlyoffice.integration.documentserver.models.enums.Action;
-import com.onlyoffice.integration.documentserver.storage.FileStoragePathBuilder;
-import com.onlyoffice.integration.entities.Group;
-import com.onlyoffice.integration.entities.Permission;
-import com.onlyoffice.integration.sdk.manager.UrlManager;
-import com.onlyoffice.integration.services.UserServices;
-import com.onlyoffice.manager.document.DocumentManager;
-import com.onlyoffice.manager.security.JwtManager;
-import com.onlyoffice.manager.settings.SettingsManager;
-import com.onlyoffice.model.common.User;
-import com.onlyoffice.model.documenteditor.Config;
-import com.onlyoffice.model.documenteditor.config.document.Info;
-import com.onlyoffice.model.documenteditor.config.document.Permissions;
-import com.onlyoffice.model.documenteditor.config.document.ReferenceData;
-import com.onlyoffice.model.documenteditor.config.document.Type;
-import com.onlyoffice.model.documenteditor.config.document.permissions.CommentGroups;
-import com.onlyoffice.model.documenteditor.config.editorconfig.CoEditing;
-import com.onlyoffice.model.documenteditor.config.editorconfig.Customization;
-import com.onlyoffice.model.documenteditor.config.editorconfig.Embedded;
-import com.onlyoffice.model.documenteditor.config.editorconfig.Mode;
-import com.onlyoffice.model.documenteditor.config.editorconfig.Template;
-import com.onlyoffice.model.documenteditor.config.editorconfig.customization.Goback;
-import com.onlyoffice.model.documenteditor.config.editorconfig.customization.Close;
-import com.onlyoffice.model.documenteditor.config.editorconfig.embedded.Toolbar;
-import com.onlyoffice.service.documenteditor.config.DefaultConfigService;
+import com.univaultoffice.integration.documentserver.models.enums.Action;
+import com.univaultoffice.integration.documentserver.storage.FileStoragePathBuilder;
+import com.univaultoffice.integration.entities.Group;
+import com.univaultoffice.integration.entities.Permission;
+import com.univaultoffice.integration.sdk.manager.UrlManager;
+import com.univaultoffice.integration.services.UserServices;
+import com.univaultoffice.manager.document.DocumentManager;
+import com.univaultoffice.manager.security.JwtManager;
+import com.univaultoffice.manager.settings.SettingsManager;
+import com.univaultoffice.model.common.User;
+import com.univaultoffice.model.documenteditor.Config;
+import com.univaultoffice.model.documenteditor.config.document.Info;
+import com.univaultoffice.model.documenteditor.config.document.Permissions;
+import com.univaultoffice.model.documenteditor.config.document.ReferenceData;
+import com.univaultoffice.model.documenteditor.config.document.Type;
+import com.univaultoffice.model.documenteditor.config.document.permissions.CommentGroups;
+import com.univaultoffice.model.documenteditor.config.editorconfig.CoEditing;
+import com.univaultoffice.model.documenteditor.config.editorconfig.Customization;
+import com.univaultoffice.model.documenteditor.config.editorconfig.Embedded;
+import com.univaultoffice.model.documenteditor.config.editorconfig.Mode;
+import com.univaultoffice.model.documenteditor.config.editorconfig.Template;
+import com.univaultoffice.model.documenteditor.config.editorconfig.customization.Goback;
+import com.univaultoffice.model.documenteditor.config.editorconfig.customization.Close;
+import com.univaultoffice.model.documenteditor.config.editorconfig.embedded.Toolbar;
+import com.univaultoffice.service.documenteditor.config.DefaultConfigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -77,7 +77,7 @@ public class ConfigServiceImpl extends DefaultConfigService implements ConfigSer
 
     @Override
     public Config createConfig(final String fileId, final Action action, final Type type) {
-        com.onlyoffice.integration.entities.User appUser = userService.getCurrentUser();
+        com.univaultoffice.integration.entities.User appUser = userService.getCurrentUser();
         Action currentAction = action;
         String fileName = getDocumentManager().getDocumentName(fileId);
         if (currentAction == null) {
@@ -136,7 +136,7 @@ public class ConfigServiceImpl extends DefaultConfigService implements ConfigSer
 
     @Override
     public Info getInfo(final String fileId) {
-        com.onlyoffice.integration.entities.User appUser = userService.getCurrentUser();
+        com.univaultoffice.integration.entities.User appUser = userService.getCurrentUser();
 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE MMM dd yyyy", Locale.US);
 
@@ -151,7 +151,7 @@ public class ConfigServiceImpl extends DefaultConfigService implements ConfigSer
 
     @Override
     public Permissions getPermissions(final String fileId) {
-        com.onlyoffice.integration.entities.User appUser = userService.getCurrentUser();
+        com.univaultoffice.integration.entities.User appUser = userService.getCurrentUser();
 
         if (appUser == null) {
             return null;
@@ -179,7 +179,7 @@ public class ConfigServiceImpl extends DefaultConfigService implements ConfigSer
 
     @Override
     public List<Template> getTemplates(final String fileId) {
-        com.onlyoffice.integration.entities.User appUser = userService.getCurrentUser();
+        com.univaultoffice.integration.entities.User appUser = userService.getCurrentUser();
 
         if (!appUser.getName().equals("Anonymous")) {
 
@@ -204,7 +204,7 @@ public class ConfigServiceImpl extends DefaultConfigService implements ConfigSer
 
     @Override
     public User getUser() {
-        com.onlyoffice.integration.entities.User appUser = userService.getCurrentUser();
+        com.univaultoffice.integration.entities.User appUser = userService.getCurrentUser();
 
         if (appUser == null) {
             return null;
@@ -229,7 +229,7 @@ public class ConfigServiceImpl extends DefaultConfigService implements ConfigSer
 
     @Override
     public Customization getCustomization(final String fileId) {
-        com.onlyoffice.integration.entities.User appUser = userService.getCurrentUser();
+        com.univaultoffice.integration.entities.User appUser = userService.getCurrentUser();
 
         Goback goback = Goback.builder()
                 .url(getUrlManager().getGobackUrl(fileId))
@@ -272,11 +272,11 @@ public class ConfigServiceImpl extends DefaultConfigService implements ConfigSer
 
     @Override
     public CoEditing getCoEditing(final String fileId, final Mode mode, final Type type) {
-        com.onlyoffice.integration.entities.User appUser = userService.getCurrentUser();
+        com.univaultoffice.integration.entities.User appUser = userService.getCurrentUser();
 
         if (mode.equals(Mode.VIEW) && appUser.getName().equals("Anonymous")) {
             return CoEditing.builder()
-                    .mode(com.onlyoffice.model.documenteditor.config.editorconfig.coediting.Mode.STRICT)
+                    .mode(com.univaultoffice.model.documenteditor.config.editorconfig.coediting.Mode.STRICT)
                     .change(false)
                     .build();
         }

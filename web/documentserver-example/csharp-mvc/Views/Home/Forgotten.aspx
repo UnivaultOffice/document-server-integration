@@ -1,4 +1,4 @@
-﻿<%@ Page Title="ONLYOFFICE" Language="C#" Inherits="System.Web.Mvc.ViewPage<OnlineEditorsExampleMVC.Models.ForgottenFilesModel>" %>
+<%@ Page Title="UNIVAULTOFFICE" Language="C#" Inherits="System.Web.Mvc.ViewPage<OnlineEditorsExampleMVC.Models.ForgottenFilesModel>" %>
 
 <%@ Import Namespace="System.IO" %>
 <%@ Import Namespace="System.Web.Configuration" %>
@@ -14,7 +14,7 @@
     <meta name="server-version" content=<%= DocManagerHelper.GetVersion() %> />
     <!--
     *
-    * (c) Copyright Ascensio System SIA 2025
+    * (c) Copyright Univault Technologies 2026
     *
     * Licensed under the Apache License, Version 2.0 (the "License");
     * you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@
     * limitations under the License.
     *
     -->
-    <title>ONLYOFFICE</title>
+    <title>UNIVAULTOFFICE</title>
 
     <link href="<%: Url.Content("~/favicon.ico") %>" rel="shortcut icon" type="image/x-icon" />
 
@@ -42,18 +42,18 @@
     <header>
         <div class="center main-nav">
             <a href="./">
-                <img src ="content/images/logo.svg" alt="ONLYOFFICE" />
+                <img src ="content/images/logo.svg" alt="UNIVAULTOFFICE" />
             </a>
         </div>
         <menu class="responsive-nav">
             <li>
               <a href="#" onclick="toggleSidePanel(event)">
-                <img src="content/images/mobile-menu.svg" alt="ONLYOFFICE" />
+                <img src="content/images/mobile-menu.svg" alt="UNIVAULTOFFICE" />
               </a>
             </li>
             <li>
               <a href="./">
-                <img src ="content/images/mobile-logo.svg" alt="ONLYOFFICE" />
+                <img src ="content/images/mobile-logo.svg" alt="UNIVAULTOFFICE" />
               </a>
             </li>
         </menu>
@@ -125,13 +125,13 @@
                 <tbody>
                     <tr>
                         <td>
-                            <a href="http://api.onlyoffice.com/editors/howitworks" target="_blank">API Documentation</a>
+                            <a href="http://api.univaultoffice.github.io/editors/howitworks" target="_blank">API Documentation</a>
                         </td>
                         <td>
-                            <a href="mailto:sales@onlyoffice.com">Submit your request</a>
+                            <a href="mailto:sales@univaultoffice.github.io">Submit your request</a>
                         </td>
                         <td class="copy">
-                            &copy; Ascensio System SIA <%= DateTime.Now.Year.ToString() %>. All rights reserved.
+                            &copy; Univault Technologies <%= DateTime.Now.Year.ToString() %>. All rights reserved.
                         </td>
                     </tr>
                 </tbody>

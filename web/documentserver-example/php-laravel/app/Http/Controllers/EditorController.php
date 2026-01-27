@@ -1,7 +1,7 @@
 <?php
 
 /**
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,10 +20,10 @@ namespace App\Http\Controllers;
 
 use App\Helpers\Path\PathInfo;
 use App\Helpers\URL\URL;
-use App\OnlyOffice\Managers\DocumentManager;
-use App\OnlyOffice\Managers\JWTManager;
-use App\OnlyOffice\Managers\SettingsManager;
-use App\OnlyOffice\Services\CallbackService;
+use App\UnivaultOffice\Managers\DocumentManager;
+use App\UnivaultOffice\Managers\JWTManager;
+use App\UnivaultOffice\Managers\SettingsManager;
+use App\UnivaultOffice\Services\CallbackService;
 use App\UseCases\Common\Http\DownloadFileCommand;
 use App\UseCases\Common\Http\DownloadFileRequest;
 use App\UseCases\Document\Create\CreateDocumentCommand;
@@ -43,10 +43,10 @@ use App\UseCases\User\Find\FindUserQueryHandler;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use Onlyoffice\DocsIntegrationSdk\Models\Callback;
-use Onlyoffice\DocsIntegrationSdk\Models\CallbackDocStatus;
-use Onlyoffice\DocsIntegrationSdk\Models\CallbackForceSaveType;
-use Onlyoffice\DocsIntegrationSdk\Models\History;
+use Univaultoffice\DocsIntegrationSdk\Models\Callback;
+use Univaultoffice\DocsIntegrationSdk\Models\CallbackDocStatus;
+use Univaultoffice\DocsIntegrationSdk\Models\CallbackForceSaveType;
+use Univaultoffice\DocsIntegrationSdk\Models\History;
 
 class EditorController extends Controller
 {

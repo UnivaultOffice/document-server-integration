@@ -1,4 +1,4 @@
-﻿<%@ Page Title="ONLYOFFICE" Language="C#" Inherits="System.Web.Mvc.ViewPage<OnlineEditorsExampleMVC.Models.FileModel>" %>
+<%@ Page Title="UNIVAULTOFFICE" Language="C#" Inherits="System.Web.Mvc.ViewPage<OnlineEditorsExampleMVC.Models.FileModel>" %>
 <%@ Import Namespace="System.IO" %>
 <%@ Import Namespace="System.Web.Configuration" %>
 <%@ Import Namespace="OnlineEditorsExampleMVC.Helpers" %>
@@ -14,7 +14,7 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <!--
     *
-    * (c) Copyright Ascensio System SIA 2025
+    * (c) Copyright Univault Technologies 2026
     *
     * Licensed under the Apache License, Version 2.0 (the "License");
     * you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@
     *
     -->
     <link rel="icon" href="<%= "content/images/" + Model.DocumentType + ".ico" %>" type="image/x-icon" />
-    <title><%= Model.FileName + " - ONLYOFFICE" %></title>
+    <title><%= Model.FileName + " - UNIVAULTOFFICE" %></title>
 
     <%: Styles.Render("~/Content/editor") %>
 

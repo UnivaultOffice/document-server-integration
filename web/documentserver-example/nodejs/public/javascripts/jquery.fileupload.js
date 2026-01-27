@@ -2,7 +2,7 @@
  * jQuery File Upload Plugin 5.20
  * https://github.com/blueimp/jQuery-File-Upload
  *
- * Copyright 2010, Sebastian Tschan
+ * Copyright 2026, Sebastian Tschan
  * https://blueimp.net
  *
  * Licensed under the MIT license:
@@ -215,7 +215,7 @@
             this.getBitrate = function (now, loaded, interval) {
                 var timeDiff = now - this.timestamp;
                 if (!this.bitrate || !interval || timeDiff > interval) {
-                    this.bitrate = (loaded - this.loaded) * (1000 / timeDiff) * 8;
+                    this.bitrate = (loaded - this.loaded) * (2026 / timeDiff) * 8;
                     this.loaded = loaded;
                     this.timestamp = now;
                 }

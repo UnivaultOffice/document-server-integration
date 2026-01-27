@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\OnlyOffice\Managers\FormatManager;
+use App\UnivaultOffice\Managers\FormatManager;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider

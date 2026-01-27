@@ -12,7 +12,7 @@
         <meta name="mobile-web-app-capable" content="yes" />
         <!--
         *
-        * (c) Copyright Ascensio System SIA 2025
+        * (c) Copyright Univault Technologies 2026
         *
         * Licensed under the Apache License, Version 2.0 (the "License");
         * you may not use this file except in compliance with the License.
@@ -27,7 +27,7 @@
         * limitations under the License.
         *
         -->
-        <title><%= Model.getDocument().getTitle() %> - ONLYOFFICE</title>
+        <title><%= Model.getDocument().getTitle() %> - UNIVAULTOFFICE</title>
         <link rel="icon" href="css/img/<%= Model.getDocumentType() %>.ico" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="css/editor.css" />
 

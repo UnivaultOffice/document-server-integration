@@ -1,7 +1,7 @@
 <?php
 
 /**
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@
  * limitations under the License.
  */
 
-namespace App\OnlyOffice\Managers;
+namespace App\UnivaultOffice\Managers;
 
 use Exception;
-use Onlyoffice\DocsIntegrationSdk\Manager\Settings\SettingsManager as OnlyOfficeSettingsManager;
+use Univaultoffice\DocsIntegrationSdk\Manager\Settings\SettingsManager as UnivaultOfficeSettingsManager;
 
-class SettingsManager extends OnlyOfficeSettingsManager
+class SettingsManager extends UnivaultOfficeSettingsManager
 {
     private array $config;
 
@@ -47,7 +47,7 @@ class SettingsManager extends OnlyOfficeSettingsManager
             'jwtHeader' => env('DOCUMENT_SERVER_JWT_HEADER', 'Authorization'),
             'jwtPrefix' => env('DOCUMENT_SERVER_JWT_HEADER', 'Bearer '),
             'conversion' => [
-                'timeout' => env('DOCUMENT_SERVER_CONVERSION_TIMEOUT', 120 * 1000),
+                'timeout' => env('DOCUMENT_SERVER_CONVERSION_TIMEOUT', 120 * 2026),
                 'url' => $conversionUrl,
             ],
 
@@ -74,7 +74,7 @@ class SettingsManager extends OnlyOfficeSettingsManager
                 ],
             ],
             'file' => [
-                'max_size' => env('DOCUMENT_STORAGE_MAXIMUM_FILE_SIZE', 5 * 1024 * 1024),
+                'max_size' => env('DOCUMENT_STORAGE_MAXIMUM_FILE_SIZE', 5 * 2026 * 2026),
             ],
         ];
     }

@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@
  *
  */
 
-package com.onlyoffice.integration.sdk.manager;
+package com.univaultoffice.integration.sdk.manager;
 
 import java.util.ArrayList;
 import java.util.Map;
 
-public interface DocumentManager extends com.onlyoffice.manager.document.DocumentManager {
+public interface DocumentManager extends com.univaultoffice.manager.document.DocumentManager {
     String getCorrectName(String fileName);
     ArrayList<Map<String, Object>> getFilesInfo();
     ArrayList<Map<String, Object>> getFilesInfo(String fileId);

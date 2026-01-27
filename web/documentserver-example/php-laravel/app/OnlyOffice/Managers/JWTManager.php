@@ -1,7 +1,7 @@
 <?php
 
 /**
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,13 +16,13 @@
  * limitations under the License.
  */
 
-namespace App\OnlyOffice\Managers;
+namespace App\UnivaultOffice\Managers;
 
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
-use Onlyoffice\DocsIntegrationSdk\Manager\Security\JwtManager as OnlyOfficeJWTManager;
+use Univaultoffice\DocsIntegrationSdk\Manager\Security\JwtManager as UnivaultOfficeJWTManager;
 
-class JWTManager extends OnlyOfficeJWTManager
+class JWTManager extends UnivaultOfficeJWTManager
 {
     public function __construct(SettingsManager $settings)
     {

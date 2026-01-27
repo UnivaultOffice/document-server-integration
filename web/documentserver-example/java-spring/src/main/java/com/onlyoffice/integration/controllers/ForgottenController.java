@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,9 +16,9 @@
  *
  */
 
-package com.onlyoffice.integration.controllers;
+package com.univaultoffice.integration.controllers;
 
-import com.onlyoffice.integration.dto.ForgottenFile;
+import com.univaultoffice.integration.dto.ForgottenFile;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -30,11 +30,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.HttpStatus;
 
-import com.onlyoffice.model.commandservice.CommandRequest;
-import com.onlyoffice.model.commandservice.CommandResponse;
-import com.onlyoffice.model.commandservice.commandrequest.Command;
-import com.onlyoffice.manager.document.DocumentManager;
-import com.onlyoffice.service.command.CommandService;
+import com.univaultoffice.model.commandservice.CommandRequest;
+import com.univaultoffice.model.commandservice.CommandResponse;
+import com.univaultoffice.model.commandservice.commandrequest.Command;
+import com.univaultoffice.manager.document.DocumentManager;
+import com.univaultoffice.service.command.CommandService;
 
 import java.util.ArrayList;
 import java.util.List;

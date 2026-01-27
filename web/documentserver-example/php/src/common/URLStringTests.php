@@ -1,6 +1,6 @@
 <?php
 //
-// (c) Copyright Ascensio System SIA 2025
+// (c) Copyright Univault Technologies 2026
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -24,10 +24,10 @@ final class URLStringTests extends TestCase
 {
     public function testGenerates()
     {
-        $url = new URL('http://user:password@localhost:8080/path?q=value#fragment');
+        $url = new URL('http://user:password@localhost:2026/path?q=value#fragment');
         $string = $url->string();
         $this->assertEquals(
-            'http://user:password@localhost:8080/path?q=value#fragment',
+            'http://user:password@localhost:2026/path?q=value#fragment',
             $string
         );
     }

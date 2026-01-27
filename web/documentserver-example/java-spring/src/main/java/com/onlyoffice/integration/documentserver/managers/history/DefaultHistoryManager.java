@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,20 +16,20 @@
  *
  */
 
-package com.onlyoffice.integration.documentserver.managers.history;
+package com.univaultoffice.integration.documentserver.managers.history;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.onlyoffice.integration.documentserver.storage.FileStoragePathBuilder;
-import com.onlyoffice.integration.sdk.manager.DocumentManager;
-import com.onlyoffice.integration.sdk.manager.UrlManager;
-import com.onlyoffice.manager.security.JwtManager;
-import com.onlyoffice.manager.settings.SettingsManager;
-import com.onlyoffice.model.common.User;
-import com.onlyoffice.model.documenteditor.HistoryData;
-import com.onlyoffice.model.documenteditor.callback.History;
-import com.onlyoffice.model.documenteditor.history.Version;
-import com.onlyoffice.model.documenteditor.historydata.Previous;
+import com.univaultoffice.integration.documentserver.storage.FileStoragePathBuilder;
+import com.univaultoffice.integration.sdk.manager.DocumentManager;
+import com.univaultoffice.integration.sdk.manager.UrlManager;
+import com.univaultoffice.manager.security.JwtManager;
+import com.univaultoffice.manager.settings.SettingsManager;
+import com.univaultoffice.model.common.User;
+import com.univaultoffice.model.documenteditor.HistoryData;
+import com.univaultoffice.model.documenteditor.callback.History;
+import com.univaultoffice.model.documenteditor.history.Version;
+import com.univaultoffice.model.documenteditor.historydata.Previous;
 import lombok.SneakyThrows;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;

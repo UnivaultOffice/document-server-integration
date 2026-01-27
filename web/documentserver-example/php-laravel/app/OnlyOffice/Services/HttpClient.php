@@ -1,7 +1,7 @@
 <?php
 
 /**
- * (c) Copyright Ascensio System SIA 2025.
+ * (c) Copyright Univault Technologies 2026.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@
  * limitations under the License.
  */
 
-namespace App\OnlyOffice\Services;
+namespace App\UnivaultOffice\Services;
 
 use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
-use Onlyoffice\DocsIntegrationSdk\Service\Request\HttpClientInterface;
+use Univaultoffice\DocsIntegrationSdk\Service\Request\HttpClientInterface;
 
 class HttpClient implements HttpClientInterface
 {

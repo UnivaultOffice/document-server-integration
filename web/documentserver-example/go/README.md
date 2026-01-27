@@ -1,19 +1,19 @@
 ## Overview
 
-This example will help you integrate ONLYOFFICE Docs into your web application written in Go.
+This example will help you integrate UNIVAULTOFFICE Docs into your web application written in Go.
 
 It is aimed at testing the editors. Please, do not use it for production without proper modifications.
 ## Installation
 
-### Step 1. Install ONLYOFFICE Docs
+### Step 1. Install UNIVAULTOFFICE Docs
 
-Download and install ONLYOFFICE Docs (packaged as Document Server).
+Download and install UNIVAULTOFFICE Docs (packaged as Document Server).
 
-See the detailed guide to learn how to install Document Server [for Windows](https://helpcenter.onlyoffice.com/installation/docs-developer-install-windows.aspx).
+See the detailed guide to learn how to install Document Server [for Windows](https://helpcenter.univaultoffice.github.io/installation/docs-developer-install-windows.aspx).
 
 ### Step 2. Download the Go code for the editors integration
 
-Download the [Go example](https://api.onlyoffice.com/editors/demopreview) from our site.
+Download the [Go example](https://api.univaultoffice.github.io/editors/demopreview) from our site.
 
 To connect the editors to your website, specify the path to the editors installation, server protocol, address and port  in the *configuration.env* file:
 
@@ -28,10 +28,10 @@ JWT_SECRET=secret
 JWT_HEADER=Authorization
 ```
 
-where the **documentserver** is the name of the server with the ONLYOFFICE Document Server installed.
+where the **documentserver** is the name of the server with the UNIVAULTOFFICE Document Server installed.
 **address** is the address of the server, **port** is the server port.
 
-If you want to experiment with the editor configuration, modify the [parameters](https://api.onlyoffice.com/editors/advanced) it the *templates/editor.html* file.
+If you want to experiment with the editor configuration, modify the [parameters](https://api.univaultoffice.github.io/editors/advanced) it the *templates/editor.html* file.
 
 ### Step 3. Install the prerequisites
 To run the Go example code, install the Go compiler:
@@ -58,7 +58,7 @@ Open the *config/configuration.json* file and enable JWT:
 }
 ```
 
-Also, [specify the same secret key](https://helpcenter.onlyoffice.com/installation/docs-configure-jwt.aspx) as used in your Document Server: 
+Also, [specify the same secret key](https://helpcenter.univaultoffice.github.io/installation/docs-configure-jwt.aspx) as used in your Document Server: 
 
 ```
 {

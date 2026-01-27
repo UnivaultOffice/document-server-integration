@@ -1,13 +1,13 @@
-﻿using System.Reflection;
+using System.Reflection;
 using System.Runtime.InteropServices;
 
 
 [assembly: AssemblyTitle("OnlineEditorsExampleMVC")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Ascensio System SIA")]
+[assembly: AssemblyCompany("Univault Technologies")]
 [assembly: AssemblyProduct("OnlineEditorsExampleMVC")]
-[assembly: AssemblyCopyright("Ascensio System SIA 2025")]
+[assembly: AssemblyCopyright("Univault Technologies 2026")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

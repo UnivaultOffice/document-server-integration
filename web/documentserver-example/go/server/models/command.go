@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,11 +22,11 @@ import "github.com/golang-jwt/jwt"
 type Command int
 
 const (
-	ONLYOFFICE_COMMAND_DROP Command = iota
-	ONLYOFFICE_COMMAND_FORCESAVE
-	ONLYOFFICE_COMMAND_INFO
-	ONLYOFFICE_COMMAND_META
-	ONLYOFFICE_COMMAND_VERSION
+	UNIVAULTOFFICE_COMMAND_DROP Command = iota
+	UNIVAULTOFFICE_COMMAND_FORCESAVE
+	UNIVAULTOFFICE_COMMAND_INFO
+	UNIVAULTOFFICE_COMMAND_META
+	UNIVAULTOFFICE_COMMAND_VERSION
 )
 
 func (c Command) String() string {

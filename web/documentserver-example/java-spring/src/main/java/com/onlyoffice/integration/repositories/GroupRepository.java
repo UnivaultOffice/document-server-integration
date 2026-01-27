@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,9 +16,9 @@
  *
  */
 
-package com.onlyoffice.integration.repositories;
+package com.univaultoffice.integration.repositories;
 
-import com.onlyoffice.integration.entities.Group;
+import com.univaultoffice.integration.entities.Group;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

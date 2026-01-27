@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,25 +16,25 @@
  *
  */
 
-package com.onlyoffice.integration.documentserver.managers.callback;
+package com.univaultoffice.integration.documentserver.managers.callback;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.onlyoffice.integration.documentserver.managers.history.HistoryManager;
-import com.onlyoffice.integration.documentserver.storage.FileStorageMutator;
-import com.onlyoffice.integration.documentserver.storage.FileStoragePathBuilder;
-import com.onlyoffice.integration.sdk.manager.DocumentManager;
-import com.onlyoffice.integration.sdk.manager.UrlManager;
-import com.onlyoffice.manager.request.RequestManager;
-import com.onlyoffice.model.commandservice.CommandRequest;
-import com.onlyoffice.model.commandservice.commandrequest.Command;
-import com.onlyoffice.model.convertservice.ConvertRequest;
-import com.onlyoffice.model.convertservice.ConvertResponse;
-import com.onlyoffice.model.documenteditor.Callback;
-import com.onlyoffice.model.documenteditor.callback.Action;
-import com.onlyoffice.model.documenteditor.callback.ForcesaveType;
-import com.onlyoffice.model.documenteditor.callback.action.Type;
-import com.onlyoffice.service.command.CommandService;
-import com.onlyoffice.service.convert.ConvertService;
+import com.univaultoffice.integration.documentserver.managers.history.HistoryManager;
+import com.univaultoffice.integration.documentserver.storage.FileStorageMutator;
+import com.univaultoffice.integration.documentserver.storage.FileStoragePathBuilder;
+import com.univaultoffice.integration.sdk.manager.DocumentManager;
+import com.univaultoffice.integration.sdk.manager.UrlManager;
+import com.univaultoffice.manager.request.RequestManager;
+import com.univaultoffice.model.commandservice.CommandRequest;
+import com.univaultoffice.model.commandservice.commandrequest.Command;
+import com.univaultoffice.model.convertservice.ConvertRequest;
+import com.univaultoffice.model.convertservice.ConvertResponse;
+import com.univaultoffice.model.documenteditor.Callback;
+import com.univaultoffice.model.documenteditor.callback.Action;
+import com.univaultoffice.model.documenteditor.callback.ForcesaveType;
+import com.univaultoffice.model.documenteditor.callback.action.Type;
+import com.univaultoffice.service.command.CommandService;
+import com.univaultoffice.service.convert.ConvertService;
 import lombok.SneakyThrows;
 import org.apache.hc.core5.http.HttpEntity;
 import org.json.simple.JSONObject;
@@ -281,8 +281,8 @@ public class DefaultCallbackManager implements CallbackManager {
                         .getCorrectName(documentManager.getBaseName(fileName) + "-form." + curExt);
             }
             forcesavePath = storagePathBuilder.getFileLocation(fileName);  // create forcesave path if it doesn't exist
-            List<com.onlyoffice.model.documenteditor.callback.Action> actions = callback.getActions();
-            com.onlyoffice.model.documenteditor.callback.Action action = actions.get(0);
+            List<com.univaultoffice.model.documenteditor.callback.Action> actions = callback.getActions();
+            com.univaultoffice.model.documenteditor.callback.Action action = actions.get(0);
             String user = action.getUserid();  // get the user ID
             // create meta data for the forcesaved file
             storageMutator.createMeta(fileName, user, "Filling Form");

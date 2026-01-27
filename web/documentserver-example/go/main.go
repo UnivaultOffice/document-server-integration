@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,16 +18,16 @@
 package main
 
 import (
-	"github.com/ONLYOFFICE/document-server-integration/config"
-	"github.com/ONLYOFFICE/document-server-integration/server"
-	"github.com/ONLYOFFICE/document-server-integration/server/api"
-	defaultApi "github.com/ONLYOFFICE/document-server-integration/server/api/default"
-	bootstrapper "github.com/ONLYOFFICE/document-server-integration/server/config"
-	"github.com/ONLYOFFICE/document-server-integration/server/handlers"
-	dhandlers "github.com/ONLYOFFICE/document-server-integration/server/handlers/default"
-	"github.com/ONLYOFFICE/document-server-integration/server/log"
-	"github.com/ONLYOFFICE/document-server-integration/server/managers"
-	dmanagers "github.com/ONLYOFFICE/document-server-integration/server/managers/default"
+	"github.com/UnivaultOffice/document-server-integration/config"
+	"github.com/UnivaultOffice/document-server-integration/server"
+	"github.com/UnivaultOffice/document-server-integration/server/api"
+	defaultApi "github.com/UnivaultOffice/document-server-integration/server/api/default"
+	bootstrapper "github.com/UnivaultOffice/document-server-integration/server/config"
+	"github.com/UnivaultOffice/document-server-integration/server/handlers"
+	dhandlers "github.com/UnivaultOffice/document-server-integration/server/handlers/default"
+	"github.com/UnivaultOffice/document-server-integration/server/log"
+	"github.com/UnivaultOffice/document-server-integration/server/managers"
+	dmanagers "github.com/UnivaultOffice/document-server-integration/server/managers/default"
 	"go.uber.org/fx"
 )
 

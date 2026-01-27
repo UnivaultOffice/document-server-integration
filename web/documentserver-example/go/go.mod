@@ -1,4 +1,4 @@
-module github.com/ONLYOFFICE/document-server-integration
+module github.com/UnivaultOffice/document-server-integration
 
 go 1.21
 

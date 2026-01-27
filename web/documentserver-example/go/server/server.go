@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,10 +21,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ONLYOFFICE/document-server-integration/config"
-	"github.com/ONLYOFFICE/document-server-integration/server/api"
-	"github.com/ONLYOFFICE/document-server-integration/server/handlers"
-	"github.com/ONLYOFFICE/document-server-integration/server/managers"
+	"github.com/UnivaultOffice/document-server-integration/config"
+	"github.com/UnivaultOffice/document-server-integration/server/api"
+	"github.com/UnivaultOffice/document-server-integration/server/handlers"
+	"github.com/UnivaultOffice/document-server-integration/server/managers"
 	"github.com/gorilla/mux"
 	"go.uber.org/zap"
 )

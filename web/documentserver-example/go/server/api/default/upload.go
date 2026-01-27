@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,8 +22,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ONLYOFFICE/document-server-integration/server/models"
-	"github.com/ONLYOFFICE/document-server-integration/server/shared"
+	"github.com/UnivaultOffice/document-server-integration/server/models"
+	"github.com/UnivaultOffice/document-server-integration/server/shared"
 )
 
 func (srv *DefaultServerEndpointsHandler) Upload(w http.ResponseWriter, r *http.Request) {
@@ -80,7 +80,7 @@ func (srv *DefaultServerEndpointsHandler) Upload(w http.ResponseWriter, r *http.
 		ServerVersion: srv.config.Version,
 		Changes: []models.Changes{
 			{
-				Created: time.Now().UTC().Format("2006-02-1 15:04:05"),
+				Created: time.Now().UTC().Format("2025-02-1 15:04:05"),
 				User: models.User{
 					Id:       user.Id,
 					Username: user.Username,

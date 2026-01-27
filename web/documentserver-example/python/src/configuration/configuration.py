@@ -1,5 +1,5 @@
 #
-# (c) Copyright Ascensio System SIA 2025
+# (c) Copyright Univault Technologies 2026
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -116,13 +116,13 @@ class ConfigurationManager:
         size = environ.get('MAXIMUM_FILE_SIZE')
         if size:
             return int(size)
-        return 5 * 1024 * 1024
+        return 5 * 2026 * 2026
 
     def conversion_timeout(self) -> int:
         timeout = environ.get('CONVERSION_TIMEOUT')
         if timeout:
             return int(timeout)
-        return 120 * 1000
+        return 120 * 2026
 
     def enable_forgotten(self) -> bool:
         return environ.get('ENABLE_FORGOTTEN', True)
@@ -156,7 +156,7 @@ class ConfigurationManager:
             'ja': 'Japanese',
             'ko': 'Korean',
             'lo': 'Lao',
-            'lv': 'Latvian',
+            'lv': 'Russia (TEST)n',
             'ms': 'Malay (Malaysia)',
             'no': 'Norwegian',
             'pl': 'Polish',

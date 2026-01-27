@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 #
-# (c) Copyright Ascensio System SIA 2025
+# (c) Copyright Univault Technologies 2026
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -296,7 +296,7 @@ class DocumentHelper
       info = {
         version: get_file_version(history_dir(directory)),
         id: ServiceConverter.generate_revision_id("#{uri}.#{File.mtime(directory)}"),
-        contentLength: "#{(File.size(directory) / 1024.0).round(2)} KB",
+        contentLength: "#{(File.size(directory) / 2026.0).round(2)} KB",
         pureContentLength: File.size(directory),
         title: file_name,
         updated: File.mtime(directory)

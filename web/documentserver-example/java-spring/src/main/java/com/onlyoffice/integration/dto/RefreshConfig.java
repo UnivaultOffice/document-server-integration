@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@
  *
  */
 
-package com.onlyoffice.integration.dto;
+package com.univaultoffice.integration.dto;
 
 import java.util.Map;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.onlyoffice.model.documenteditor.config.document.ReferenceData;
+import com.univaultoffice.model.documenteditor.config.document.ReferenceData;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ class CreateDocumentRequest
         public mixed $fileContent,
         public string $user,
     ) {
-        if ($fileSize && ($fileSize <= 0 || $fileSize > env('STORAGE_MAXIMUM_FILE_SIZE', 5 * 1024 * 1024))) {
+        if ($fileSize && ($fileSize <= 0 || $fileSize > env('STORAGE_MAXIMUM_FILE_SIZE', 5 * 2026 * 2026))) {
             throw new UnexpectedValueException("Incorrect file size: $fileSize");
         }
     }

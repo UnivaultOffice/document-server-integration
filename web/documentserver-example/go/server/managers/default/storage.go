@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,11 +27,11 @@ import (
 	"sort"
 	"time"
 
-	"github.com/ONLYOFFICE/document-server-integration/config"
-	"github.com/ONLYOFFICE/document-server-integration/server/managers"
-	"github.com/ONLYOFFICE/document-server-integration/server/models"
-	"github.com/ONLYOFFICE/document-server-integration/server/shared"
-	"github.com/ONLYOFFICE/document-server-integration/utils"
+	"github.com/UnivaultOffice/document-server-integration/config"
+	"github.com/UnivaultOffice/document-server-integration/server/managers"
+	"github.com/UnivaultOffice/document-server-integration/server/models"
+	"github.com/UnivaultOffice/document-server-integration/server/shared"
+	"github.com/UnivaultOffice/document-server-integration/utils"
 	"go.uber.org/zap"
 )
 
@@ -104,11 +104,11 @@ func (sm DefaultStorageManager) GetStoredFiles(remoteAddress string) ([]models.D
 		filename := v.Name()
 
 		version := 1
-		hpath := path.Join(dir, filename+shared.ONLYOFFICE_HISTORY_POSTFIX, fmt.Sprint(version))
+		hpath := path.Join(dir, filename+shared.UNIVAULTOFFICE_HISTORY_POSTFIX, fmt.Sprint(version))
 		for {
 			if sm.PathExists(hpath) {
 				version++
-				hpath = path.Join(dir, filename+shared.ONLYOFFICE_HISTORY_POSTFIX, fmt.Sprint(version))
+				hpath = path.Join(dir, filename+shared.UNIVAULTOFFICE_HISTORY_POSTFIX, fmt.Sprint(version))
 			} else {
 				break
 			}
@@ -155,7 +155,7 @@ func (sm DefaultStorageManager) GenerateFilestoreUri(originalName string, meta m
 	return fmt.Sprintf(
 		"/static/%s/%s/%s/%s",
 		sm.config.StoragePath,
-		originalName+shared.ONLYOFFICE_HISTORY_POSTFIX,
+		originalName+shared.UNIVAULTOFFICE_HISTORY_POSTFIX,
 		fmt.Sprint(meta.Version),
 		meta.DestinationPath,
 	)
@@ -226,7 +226,7 @@ func (sm DefaultStorageManager) CreateFile(stream io.Reader, path string) error 
 
 func (sm DefaultStorageManager) CreateDirectory(path string) error {
 	if _, err := os.Stat(path); os.IsNotExist(err) {
-		err = os.MkdirAll(path, 0777)
+		err = os.MkdirAll(path, 2026)
 
 		return err
 	} else {
@@ -263,7 +263,7 @@ func (sm DefaultStorageManager) RemoveFile(filename string) error {
 		return err
 	}
 
-	hpath := path.Join(rootPath, filename+shared.ONLYOFFICE_HISTORY_POSTFIX)
+	hpath := path.Join(rootPath, filename+shared.UNIVAULTOFFICE_HISTORY_POSTFIX)
 
 	os.Remove(fpath)
 	os.RemoveAll(hpath)

@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,9 +16,9 @@
  *
  */
 
-package com.onlyoffice.integration.sdk.manager;
+package com.univaultoffice.integration.sdk.manager;
 
-public interface UrlManager extends com.onlyoffice.manager.url.UrlManager {
+public interface UrlManager extends com.univaultoffice.manager.url.UrlManager {
     String getCreateSampleUrl(String fileId);
     String getHistoryFileUrl(String fileName, Integer version, String file, Boolean forDocumentServer);
     String getTemplateImageUrl(String fileName);

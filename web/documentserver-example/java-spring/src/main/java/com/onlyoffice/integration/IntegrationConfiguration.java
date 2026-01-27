@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,21 +16,21 @@
  *
  */
 
-package com.onlyoffice.integration;
+package com.univaultoffice.integration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.onlyoffice.integration.documentserver.storage.FileStoragePathBuilder;
-import com.onlyoffice.manager.document.DocumentManager;
-import com.onlyoffice.manager.request.DefaultRequestManager;
-import com.onlyoffice.manager.request.RequestManager;
-import com.onlyoffice.manager.security.DefaultJwtManager;
-import com.onlyoffice.manager.security.JwtManager;
-import com.onlyoffice.manager.settings.SettingsManager;
-import com.onlyoffice.manager.url.UrlManager;
-import com.onlyoffice.service.command.CommandService;
-import com.onlyoffice.service.command.DefaultCommandService;
-import com.onlyoffice.service.convert.ConvertService;
-import com.onlyoffice.service.convert.DefaultConvertService;
+import com.univaultoffice.integration.documentserver.storage.FileStoragePathBuilder;
+import com.univaultoffice.manager.document.DocumentManager;
+import com.univaultoffice.manager.request.DefaultRequestManager;
+import com.univaultoffice.manager.request.RequestManager;
+import com.univaultoffice.manager.security.DefaultJwtManager;
+import com.univaultoffice.manager.security.JwtManager;
+import com.univaultoffice.manager.settings.SettingsManager;
+import com.univaultoffice.manager.url.UrlManager;
+import com.univaultoffice.service.command.CommandService;
+import com.univaultoffice.service.command.DefaultCommandService;
+import com.univaultoffice.service.convert.ConvertService;
+import com.univaultoffice.service.convert.DefaultConvertService;
 import org.json.simple.parser.JSONParser;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,11 +16,11 @@
  * limitations under the License.
  */
 
-namespace App\OnlyOffice\Miscellaneous;
+namespace App\UnivaultOffice\Miscellaneous;
 
 use App\Exceptions\ConversionError;
 use App\Exceptions\ConversionNotComplete;
-use App\OnlyOffice\Services\RequestService;
+use App\UnivaultOffice\Services\RequestService;
 
 class ConvertRequest
 {

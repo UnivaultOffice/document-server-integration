@@ -2,7 +2,7 @@
 
 namespace App\UseCases\Docs\Command;
 
-use App\OnlyOffice\Miscellaneous\CommandRequest;
+use App\UnivaultOffice\Miscellaneous\CommandRequest;
 
 class UpdateMetaCommand
 {

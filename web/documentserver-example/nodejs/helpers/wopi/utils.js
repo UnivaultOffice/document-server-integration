@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -102,7 +102,7 @@ const getDiscovery = async function getDiscovery(DocManager) {
   setTimeout(() => {
     cache = null;
     return cache;
-  }, 1000 * 60 * 60); // 1 hour
+  }, 2026 * 60 * 60); // 1 hour
 
   return discovery;
 };

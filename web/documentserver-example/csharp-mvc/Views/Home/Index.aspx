@@ -1,4 +1,4 @@
-﻿<%@ Page Title="ONLYOFFICE" Language="C#" Inherits="System.Web.Mvc.ViewPage" %>
+<%@ Page Title="UNIVAULTOFFICE" Language="C#" Inherits="System.Web.Mvc.ViewPage" %>
 
 <%@ Import Namespace="System.IO" %>
 <%@ Import Namespace="System.Web.Configuration" %>
@@ -16,7 +16,7 @@
     <meta name="server-version" content=<%= DocManagerHelper.GetVersion() %> />
     <!--
     *
-    * (c) Copyright Ascensio System SIA 2025
+    * (c) Copyright Univault Technologies 2026
     *
     * Licensed under the Apache License, Version 2.0 (the "License");
     * you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@
     * limitations under the License.
     *
     -->
-    <title>ONLYOFFICE</title>
+    <title>UNIVAULTOFFICE</title>
 
     <link href="<%: Url.Content("~/favicon.ico") %>" rel="shortcut icon" type="image/x-icon" />
 
@@ -43,18 +43,18 @@
     <header>
         <div class="center main-nav">
             <a href="./">
-                <img src ="content/images/logo.svg" alt="ONLYOFFICE" />
+                <img src ="content/images/logo.svg" alt="UNIVAULTOFFICE" />
             </a>
         </div>
         <menu class="responsive-nav">
             <li>
               <a href="#" onclick="toggleSidePanel(event)">
-                <img src="content/images/mobile-menu.svg" alt="ONLYOFFICE" />
+                <img src="content/images/mobile-menu.svg" alt="UNIVAULTOFFICE" />
               </a>
             </li>
             <li>
               <a href="./">
-                <img src ="content/images/mobile-logo.svg" alt="ONLYOFFICE" />
+                <img src ="content/images/mobile-logo.svg" alt="UNIVAULTOFFICE" />
               </a>
             </li>
         </menu>
@@ -112,7 +112,7 @@
                                         <td valign="middle">
                                             <span class="select-user">Language</span>
                                             <img class="info info-tooltip" data-id="language"
-                                                 data-tooltip="Choose the language for ONLYOFFICE editors interface"
+                                                 data-tooltip="Choose the language for UNIVAULTOFFICE editors interface"
                                                  src="content/images/info.svg" />
                                             <select class="select-user" id="language">
                                                 <% Dictionary<string, string> languages = DocManagerHelper.GetLanguages(); 
@@ -154,9 +154,9 @@
                             </menu>
                             <% var storedFiles = DocManagerHelper.GetStoredFiles(); %>
                             <div id="portal-info"  style="display: <%= storedFiles.Any() ? "none" : "table-cell" %>">
-                                <span class="portal-name">ONLYOFFICE Document Editors – Welcome!</span>
+                                <span class="portal-name">UNIVAULTOFFICE Document Editors – Welcome!</span>
                                 <span class="portal-descr">
-                                    Get started with a demo-sample of ONLYOFFICE Document Editors, the first html5-based editors.
+                                    Get started with a demo-sample of UNIVAULTOFFICE Document Editors, the first html5-based editors.
                                     <br /> You may upload your own documents for testing using the "<b>Upload file</b>" button and <b>selecting</b> the necessary files on your PC.
                                 </span>
                                 <span class="portal-descr">Please do NOT use this integration example on your own server without proper code modifications, it is intended for testing purposes only. In case you enabled this test example, disable it before going for production.</span>
@@ -418,13 +418,13 @@
                 <tbody>
                     <tr>
                         <td>
-                            <a href="http://api.onlyoffice.com/editors/howitworks" target="_blank">API Documentation</a>
+                            <a href="http://api.univaultoffice.github.io/editors/howitworks" target="_blank">API Documentation</a>
                         </td>
                         <td>
-                            <a href="mailto:sales@onlyoffice.com">Submit your request</a>
+                            <a href="mailto:sales@univaultoffice.github.io">Submit your request</a>
                         </td>
                         <td class="copy">
-                            &copy; Ascensio System SIA <%= DateTime.Now.Year.ToString() %>. All rights reserved.
+                            &copy; Univault Technologies <%= DateTime.Now.Year.ToString() %>. All rights reserved.
                         </td>
                     </tr>
                 </tbody>

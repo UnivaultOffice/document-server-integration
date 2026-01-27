@@ -1,7 +1,7 @@
 <?php
 
 /**
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,9 +22,9 @@ use App\Helpers\Path\Path;
 use App\Helpers\Path\PathInfo;
 use App\Helpers\URL\FileURL;
 use App\Helpers\URL\URL;
-use App\OnlyOffice\Managers\FormatManager;
-use App\OnlyOffice\Managers\JWTManager;
-use App\OnlyOffice\Managers\SettingsManager;
+use App\UnivaultOffice\Managers\FormatManager;
+use App\UnivaultOffice\Managers\JWTManager;
+use App\UnivaultOffice\Managers\SettingsManager;
 use App\UseCases\Common\Http\DownloadFileCommand;
 use App\UseCases\Common\Http\DownloadFileRequest;
 use App\UseCases\Docs\Command\UpdateMetaCommand;

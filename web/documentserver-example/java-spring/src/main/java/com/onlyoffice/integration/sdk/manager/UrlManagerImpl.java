@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,13 +16,13 @@
  *
  */
 
-package com.onlyoffice.integration.sdk.manager;
+package com.univaultoffice.integration.sdk.manager;
 
-import com.onlyoffice.integration.documentserver.storage.FileStoragePathBuilder;
-import com.onlyoffice.manager.document.DocumentManager;
-import com.onlyoffice.manager.settings.SettingsManager;
-import com.onlyoffice.manager.url.DefaultUrlManager;
-import com.onlyoffice.model.documenteditor.config.document.DocumentType;
+import com.univaultoffice.integration.documentserver.storage.FileStoragePathBuilder;
+import com.univaultoffice.manager.document.DocumentManager;
+import com.univaultoffice.manager.settings.SettingsManager;
+import com.univaultoffice.manager.url.DefaultUrlManager;
+import com.univaultoffice.model.documenteditor.config.document.DocumentType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

@@ -4,7 +4,7 @@ namespace App\UseCases\Document\Find;
 
 use App\Helpers\Path\Path;
 use App\Helpers\Path\PathInfo;
-use App\OnlyOffice\Managers\FormatManager;
+use App\UnivaultOffice\Managers\FormatManager;
 use App\Repositories\FileRepository;
 use App\Repositories\ForceSavedFilesRepository;
 use App\Repositories\UserRepository;

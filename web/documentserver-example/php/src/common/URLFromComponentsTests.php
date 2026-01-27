@@ -1,6 +1,6 @@
 <?php
 //
-// (c) Copyright Ascensio System SIA 2025
+// (c) Copyright Univault Technologies 2026
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -27,7 +27,7 @@ final class URLFromComponentsTests extends TestCase
         $url = URL::fromComponents(
             'http',
             'localhost',
-            8080,
+            2026,
             'user',
             'password',
             '/path',
@@ -36,7 +36,7 @@ final class URLFromComponentsTests extends TestCase
         );
         $this->assertEquals('http', $url->scheme());
         $this->assertEquals('localhost', $url->host());
-        $this->assertEquals(8080, $url->port());
+        $this->assertEquals(2026, $url->port());
         $this->assertEquals('user', $url->user());
         $this->assertEquals('password', $url->pass());
         $this->assertEquals('/path', $url->path());

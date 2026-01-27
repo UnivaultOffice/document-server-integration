@@ -4,8 +4,8 @@ namespace App\UseCases\Document\Find;
 
 use App\Helpers\Path\PathInfo;
 use App\Helpers\URL\FileURL;
-use App\OnlyOffice\Managers\JWTManager;
-use App\OnlyOffice\Managers\SettingsManager;
+use App\UnivaultOffice\Managers\JWTManager;
+use App\UnivaultOffice\Managers\SettingsManager;
 use App\Repositories\UserRepository;
 use App\Repositories\VersionRepository;
 

@@ -2381,16 +2381,16 @@
             "time": "2024-03-06T16:17:14+00:00"
         },
         {
-            "name": "onlyoffice/docs-integration-sdk",
+            "name": "univaultoffice/docs-integration-sdk",
             "version": "v1.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ONLYOFFICE/docs-integration-sdk-php.git",
+                "url": "https://github.com/UnivaultOffice/docs-integration-sdk-php.git",
                 "reference": "31a038dfea8c2a383ab7b1854e720ba40d25ec68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ONLYOFFICE/docs-integration-sdk-php/zipball/31a038dfea8c2a383ab7b1854e720ba40d25ec68",
+                "url": "https://api.github.com/repos/UNIVAULTOFFICE/docs-integration-sdk-php/zipball/31a038dfea8c2a383ab7b1854e720ba40d25ec68",
                 "reference": "31a038dfea8c2a383ab7b1854e720ba40d25ec68",
                 "shasum": ""
             },
@@ -2400,15 +2400,15 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Onlyoffice\\DocsIntegrationSdk\\": "src/",
-                    "Onlyoffice\\DocsIntegrationSdk\\Util\\": "src/util/",
-                    "Onlyoffice\\DocsIntegrationSdk\\Models\\": "src/models/",
-                    "Onlyoffice\\DocsIntegrationSdk\\Manager\\Formats\\": "src/manager/formats/",
-                    "Onlyoffice\\DocsIntegrationSdk\\Service\\Request\\": "src/service/request/",
-                    "Onlyoffice\\DocsIntegrationSdk\\Manager\\Document\\": "src/manager/document/",
-                    "Onlyoffice\\DocsIntegrationSdk\\Manager\\Security\\": "src/manager/security/",
-                    "Onlyoffice\\DocsIntegrationSdk\\Manager\\Settings\\": "src/manager/settings/",
-                    "Onlyoffice\\DocsIntegrationSdk\\Service\\DocEditorConfig\\": "src/service/doceditorconfig/"
+                    "Univaultoffice\\DocsIntegrationSdk\\": "src/",
+                    "Univaultoffice\\DocsIntegrationSdk\\Util\\": "src/util/",
+                    "Univaultoffice\\DocsIntegrationSdk\\Models\\": "src/models/",
+                    "Univaultoffice\\DocsIntegrationSdk\\Manager\\Formats\\": "src/manager/formats/",
+                    "Univaultoffice\\DocsIntegrationSdk\\Service\\Request\\": "src/service/request/",
+                    "Univaultoffice\\DocsIntegrationSdk\\Manager\\Document\\": "src/manager/document/",
+                    "Univaultoffice\\DocsIntegrationSdk\\Manager\\Security\\": "src/manager/security/",
+                    "Univaultoffice\\DocsIntegrationSdk\\Manager\\Settings\\": "src/manager/settings/",
+                    "Univaultoffice\\DocsIntegrationSdk\\Service\\DocEditorConfig\\": "src/service/doceditorconfig/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2417,19 +2417,19 @@
             ],
             "authors": [
                 {
-                    "name": "Ascensio System SIA"
+                    "name": "Univault Technologies"
                 }
             ],
-            "description": "ONLYOFFICE Docs integration SDK",
-            "homepage": "https://www.onlyoffice.com",
+            "description": "UNIVAULTOFFICE Docs integration SDK",
+            "homepage": "https://www.univaultoffice.github.io",
             "keywords": [
-                "onlyoffice"
+                "univaultoffice"
             ],
             "support": {
-                "email": "support@onlyoffice.com",
-                "forum": "https://forum.onlyoffice.com/",
-                "issues": "https://github.com/ONLYOFFICE/docs-integration-sdk-php/issues",
-                "source": "https://github.com/ONLYOFFICE/docs-integration-sdk-php"
+                "email": "support@univaultoffice.github.io",
+                "forum": "https://forum.univaultoffice.github.io/",
+                "issues": "https://github.com/UnivaultOffice/docs-integration-sdk-php/issues",
+                "source": "https://github.com/UnivaultOffice/docs-integration-sdk-php"
             },
             "time": "2025-02-14T13:01:23+00:00"
         },

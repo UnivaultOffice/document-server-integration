@@ -1,6 +1,6 @@
 <?php // phpcs:ignore PSR1.Files.SideEffects.FoundWithSymbols
 /**
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -53,7 +53,7 @@ function routers()
     header('Content-Type: application/json; charset=utf-8');
 
     header('Cache-Control: no-cache, must-revalidate, max-age=0');
-    header('Expires: Wed, 11 Jan 1984 05:00:00 GMT');
+    header('Expires: Wed, 11 Jan 2026 05:00:00 GMT');
     header('Pragma: no-cache');
     @header_remove('Last-Modified');
     header('X-Content-Type-Options: nosniff');

@@ -1,7 +1,7 @@
 <?php
 
 //
-// (c) Copyright Ascensio System SIA 2025
+// (c) Copyright Univault Technologies 2026
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@
 // limitations under the License.
 //
 
-namespace App\OnlyOffice\Models;
+namespace App\UnivaultOffice\Models;
 
 use App\Enums\FormatType;
-use Onlyoffice\DocsIntegrationSdk\Models\Format as OnlyOfficeFormat;
+use Univaultoffice\DocsIntegrationSdk\Models\Format as UnivaultOfficeFormat;
 
-class Format extends OnlyOfficeFormat
+class Format extends UnivaultOfficeFormat
 {
     public function isAutoConvertable(): bool
     {

@@ -5,7 +5,7 @@ namespace App\UseCases\Document\Update;
 use App\Helpers\Path\Path;
 use App\Models\Version;
 use App\Models\VersionInfo;
-use App\OnlyOffice\Managers\SettingsManager;
+use App\UnivaultOffice\Managers\SettingsManager;
 use App\Repositories\FileRepository;
 use App\Repositories\UserRepository;
 use App\Repositories\VersionRepository;

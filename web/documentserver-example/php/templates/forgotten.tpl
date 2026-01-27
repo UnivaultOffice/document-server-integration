@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="server-version" content="{serverVersion}">
-    <title>ONLYOFFICE Document Editors</title>
+    <title>UNIVAULTOFFICE Document Editors</title>
 
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
 
@@ -21,18 +21,18 @@
     <header>
         <div class="center main-nav">
             <a href="./">
-                <img src ="assets/images/logo.svg" alt="ONLYOFFICE" />
+                <img src ="assets/images/logo.svg" alt="UNIVAULTOFFICE" />
             </a>
         </div>
         <menu class="responsive-nav">
             <li>
                 <a href="#">
-                    <img src ="assets/images/mobile-menu.svg" alt="ONLYOFFICE" />
+                    <img src ="assets/images/mobile-menu.svg" alt="UNIVAULTOFFICE" />
                 </a>
             </li>
             <li>
                 <a href="./">
-                    <img src ="assets/images/mobile-logo.svg" alt="ONLYOFFICE" />
+                    <img src ="assets/images/mobile-logo.svg" alt="UNIVAULTOFFICE" />
                 </a>
             </li>
         </menu>
@@ -88,15 +88,15 @@
                 <tbody>
                 <tr>
                     <td>
-                        <a href="http://api.onlyoffice.com/editors/howitworks" target="_blank">
+                        <a href="http://api.univaultoffice.github.io/editors/howitworks" target="_blank">
                             API Documentation
                         </a>
                     </td>
                     <td>
-                        <a href="mailto:sales@onlyoffice.com">Submit your request</a>
+                        <a href="mailto:sales@univaultoffice.github.io">Submit your request</a>
                     </td>
                     <td class="copy">
-                        &copy; Ascensio Systems SIA {date}. All rights reserved.
+                        &copy; Univault Technologiess SIA {date}. All rights reserved.
                     </td>
                 </tr>
                 </tbody>

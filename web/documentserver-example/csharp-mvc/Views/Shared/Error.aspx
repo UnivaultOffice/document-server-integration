@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
+<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <!--
     *
-    * (c) Copyright Ascensio System SIA 2025
+    * (c) Copyright Univault Technologies 2026
     *
     * Licensed under the Apache License, Version 2.0 (the "License");
     * you may not use this file except in compliance with the License.

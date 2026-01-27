@@ -1,5 +1,5 @@
 #
-# (c) Copyright Ascensio System SIA 2025
+# (c) Copyright Univault Technologies 2026
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -137,7 +137,7 @@ class FormatManager():
 
     def __file(self) -> Path:
         directory = self.__directory()
-        return directory.joinpath('onlyoffice-docs-formats.json')
+        return directory.joinpath('univaultoffice-docs-formats.json')
 
     def __directory(self) -> Path:
         current_file = Path(__file__)

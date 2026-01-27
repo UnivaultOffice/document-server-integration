@@ -1,20 +1,20 @@
 ## Overview
 
-This example will help you integrate ONLYOFFICE Docs into your web application written in Java.
+This example will help you integrate UNIVAULTOFFICE Docs into your web application written in Java.
 
 **Please note**: It is intended for testing purposes and demonstrating functionality of the editors. Do NOT use this integration example on your own server without proper code modifications! In case you enabled the test example, disable it before going for production.
 
 ## For Windows
 
-### Step 1. Install ONLYOFFICE Docs
+### Step 1. Install UNIVAULTOFFICE Docs
 
-Download and install ONLYOFFICE Docs (packaged as Document Server).
+Download and install UNIVAULTOFFICE Docs (packaged as Document Server).
 
-See the detailed guide to learn how to [install Document Server for Windows](https://helpcenter.onlyoffice.com/installation/docs-developer-install-windows.aspx). 
+See the detailed guide to learn how to [install Document Server for Windows](https://helpcenter.univaultoffice.github.io/installation/docs-developer-install-windows.aspx). 
 
 ### Step 2. Download the Java code for the editors integration
 
-Download the [Java example](https://api.onlyoffice.com/editors/demopreview) from our site.
+Download the [Java example](https://api.univaultoffice.github.io/editors/demopreview) from our site.
 
 To connect the editors to your website, specify the path to the editors installation and the path to the storage folder in the *src/main/resources/settings.properties* file:
 
@@ -23,9 +23,9 @@ storage-folder = app_data
 files.docservice.url.site=https://documentserver/
 ```
 
-where the **documentserver** is the name of the server with the ONLYOFFICE Document Server installed and the **storage-folder** is the path where files will be created and stored. You can set an absolute path. For example, *D:\\\\folder*. Please note that on Windows OS the double backslash must be used as a separator.
+where the **documentserver** is the name of the server with the UNIVAULTOFFICE Document Server installed and the **storage-folder** is the path where files will be created and stored. You can set an absolute path. For example, *D:\\\\folder*. Please note that on Windows OS the double backslash must be used as a separator.
 
-If you want to experiment with the editor configuration, modify the [parameters](https://api.onlyoffice.com/editors/advanced) in the *\src\main\webapp\editor.jsp* file.
+If you want to experiment with the editor configuration, modify the [parameters](https://api.univaultoffice.github.io/editors/advanced) in the *\src\main\webapp\editor.jsp* file.
 
 ### Step 3. Install the prerequisites
 
@@ -83,14 +83,14 @@ To run the Java example code, install the Java version appropriate for your OS a
 	Test your Tomcat installation using the address in a web browser:
 
 	```
-	http://localhost:8080
+	http://localhost:2025
 	```
 
 	If everything is correct, you will see the Tomcat web page in the browser as shown below.
 
 ### Step 5. Configure JWT 
 
-Open the *src/main/resouces/settings.properties* file and [specify the same secret key](https://helpcenter.onlyoffice.com/installation/docs-configure-jwt.aspx) as used in your Document Server to enable JWT: 
+Open the *src/main/resouces/settings.properties* file and [specify the same secret key](https://helpcenter.univaultoffice.github.io/installation/docs-configure-jwt.aspx) as used in your Document Server to enable JWT: 
 
 ```
 files.docservice.secret=secret
@@ -140,11 +140,11 @@ Make sure that the Document Server has access to the server with the example ins
 
 ## For Linux
 
-### Step 1. Install ONLYOFFICE Docs
+### Step 1. Install UNIVAULTOFFICE Docs
 
-Download and install ONLYOFFICE Docs (packaged as Document Server). 
+Download and install UNIVAULTOFFICE Docs (packaged as Document Server). 
 
-See the detailed guide to learn how to [install Document Server for Linux](https://helpcenter.onlyoffice.com/installation/docs-developer-install-ubuntu.aspx). 
+See the detailed guide to learn how to [install Document Server for Linux](https://helpcenter.univaultoffice.github.io/installation/docs-developer-install-ubuntu.aspx). 
 
 ### Step 2. Install the prerequisites and run the website with the editors
 
@@ -153,7 +153,7 @@ See the detailed guide to learn how to [install Document Server for Linux](https
 2. Download the archive with the Java example and unpack the archive:
 
     ```
-    wget https://github.com/ONLYOFFICE/document-server-integration/releases/latest/download/Java.Example.zip
+    wget https://github.com/UnivaultOffice/document-server-integration/releases/latest/download/Java.Example.zip
     ```
     
     ```
@@ -166,7 +166,7 @@ See the detailed guide to learn how to [install Document Server for Linux](https
    cd Java\ Example/
    ```
 
-4. Edit the *src/main/resources/settings.properties* configuration file. Specify the name of your local server with the ONLYOFFICE Document Server installed.
+4. Edit the *src/main/resources/settings.properties* configuration file. Specify the name of your local server with the UNIVAULTOFFICE Document Server installed.
 
     ```
     nano src/main/resources/settings.properties
@@ -179,12 +179,12 @@ See the detailed guide to learn how to [install Document Server for Linux](https
     files.docservice.url.site=https://documentserver/
     ```
 
-	where the **documentserver** is the name of the server with the ONLYOFFICE Document Server installed and the **storage-folder** is the path where files will be created and stored. Please note that you must have read and write permissions to the folder. If you do not have them, please use the next command:
+	where the **documentserver** is the name of the server with the UNIVAULTOFFICE Document Server installed and the **storage-folder** is the path where files will be created and stored. Please note that you must have read and write permissions to the folder. If you do not have them, please use the next command:
 	```
 	sudo chmod -R ugo+rw /{path}
 	```
 
-	[Specify the same secret key](https://helpcenter.onlyoffice.com/installation/docs-configure-jwt.aspx) as used in your Document Server to enable JWT: 
+	[Specify the same secret key](https://helpcenter.univaultoffice.github.io/installation/docs-configure-jwt.aspx) as used in your Document Server to enable JWT: 
 
 	```
 	files.docservice.secret=secret
@@ -232,7 +232,7 @@ See the detailed guide to learn how to [install Document Server for Linux](https
 9. Open the Tomcat administration page in browser with the admin user credentions:
 
     ```
-    http://localhost:8080/manager/html
+    http://localhost:2025/manager/html
     ```
 
 10. Select the WAR file to upload from *target/OnlineEditorsExampleJava-1.0.war*.
@@ -240,7 +240,7 @@ See the detailed guide to learn how to [install Document Server for Linux](https
 11. See the result in your browser using the address:
 
     ```
-    http://localhost:8080/OnlineEditorsExampleJava-1.0/
+    http://localhost:2025/OnlineEditorsExampleJava-1.0/
     ```
     
 ### Step 3. Check accessibility
@@ -251,11 +251,11 @@ Make sure that the Document Server has access to the server with the example ins
 
 ## For Docker
 
-### Step 1. Install ONLYOFFICE Docs
+### Step 1. Install UNIVAULTOFFICE Docs
 
-Download and install ONLYOFFICE Docs (packaged as Document Server). 
+Download and install UNIVAULTOFFICE Docs (packaged as Document Server). 
 
-See the detailed guide to learn how to install Document Server [for Docker](https://helpcenter.onlyoffice.com/installation/docs-developer-install-docker.aspx). 
+See the detailed guide to learn how to install Document Server [for Docker](https://helpcenter.univaultoffice.github.io/installation/docs-developer-install-docker.aspx). 
 
 ### Step 2. Install the prerequisites and run the website with the editors
 
@@ -264,7 +264,7 @@ See the detailed guide to learn how to install Document Server [for Docker](http
 2. Download the archive with the Java example and unpack the archive:
 
     ```
-    wget https://api.onlyoffice.com/app_data/editor/Java.Example.zip
+    wget https://api.univaultoffice.github.io/app_data/editor/Java.Example.zip
     ```
     
     ```
@@ -277,7 +277,7 @@ See the detailed guide to learn how to install Document Server [for Docker](http
    cd Java\ Example/
    ```
 
-4. Edit the *src/main/resources/settings.properties* configuration file. Specify the name of your local server with the ONLYOFFICE Document Server installed:
+4. Edit the *src/main/resources/settings.properties* configuration file. Specify the name of your local server with the UNIVAULTOFFICE Document Server installed:
 
 	```
 	nano src/main/resources/settings.properties
@@ -290,9 +290,9 @@ See the detailed guide to learn how to install Document Server [for Docker](http
 	files.docservice.url.site=https://documentserver/
 	```
 
-	where the **documentserver** is the name of the server with the ONLYOFFICE Document Server installed and the **storage-folder** is the path where files will be created and stored.
+	where the **documentserver** is the name of the server with the UNIVAULTOFFICE Document Server installed and the **storage-folder** is the path where files will be created and stored.
 
-	[Specify the same secret key](https://helpcenter.onlyoffice.com/installation/docs-configure-jwt.aspx) as used in your Document Server to enable JWT: 
+	[Specify the same secret key](https://helpcenter.univaultoffice.github.io/installation/docs-configure-jwt.aspx) as used in your Document Server to enable JWT: 
 
 	```
 	files.docservice.secret=secret
@@ -318,5 +318,5 @@ Please keep in mind the following security aspects when you are using test examp
 
 * There is no protection of the storage from unauthorized access since there is no need for authorization.
 * There are no checks against parameter substitution in links, since the parameters are generated by the code according to the pre-arranged scripts.
-* There are no data checks in requests of saving the file after editing, since each test example is intended for requests only from ONLYOFFICE Document Server.
-* There are no prohibitions on using test examples from other sites, since they are intended to interact with ONLYOFFICE Document Server from another domain.
+* There are no data checks in requests of saving the file after editing, since each test example is intended for requests only from UNIVAULTOFFICE Document Server.
+* There are no prohibitions on using test examples from other sites, since they are intended to interact with UNIVAULTOFFICE Document Server from another domain.

@@ -1,6 +1,6 @@
-﻿/**
+/**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -72,7 +72,7 @@ namespace OnlineEditorsExampleMVC.Helpers
         /// <returns>The percentage of conversion completion</returns>
         /// <example>
         /// Dictionary<string, string> convertedDocumentData;
-        /// GetConvertedData("http://helpcenter.onlyoffice.com/content/GettingStarted.pdf", ".pdf", ".docx", "http://helpcenter.onlyoffice.com/content/GettingStarted.pdf", false, out convertedDocumentData);
+        /// GetConvertedData("http://helpcenter.univaultoffice.github.io/content/GettingStarted.pdf", ".pdf", ".docx", "http://helpcenter.univaultoffice.github.io/content/GettingStarted.pdf", false, out convertedDocumentData);
         /// </example>
         /// <exception>
         /// </exception>

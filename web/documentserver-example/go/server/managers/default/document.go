@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,10 +24,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ONLYOFFICE/document-server-integration/config"
-	"github.com/ONLYOFFICE/document-server-integration/server/managers"
-	"github.com/ONLYOFFICE/document-server-integration/server/models"
-	"github.com/ONLYOFFICE/document-server-integration/utils"
+	"github.com/UnivaultOffice/document-server-integration/config"
+	"github.com/UnivaultOffice/document-server-integration/server/managers"
+	"github.com/UnivaultOffice/document-server-integration/server/models"
+	"github.com/UnivaultOffice/document-server-integration/utils"
 	"github.com/golang-jwt/jwt"
 	"go.uber.org/zap"
 )
@@ -43,14 +43,14 @@ type DefaultDocumentManager struct {
 }
 
 const (
-	onlyoffice_permission_edit         = "edit"
-	onlyoffice_permission_view         = "view"
-	onlyoffice_permission_fill_forms   = "fillForms"
-	onlyoffice_permission_embedded     = "embedded"
-	onlyoffice_permission_blockcontent = "blockcontent"
-	onlyoffice_permission_filter       = "filter"
-	onlyoffice_permission_review       = "review"
-	onlyoffice_permission_comment      = "comment"
+	univaultoffice_permission_edit         = "edit"
+	univaultoffice_permission_view         = "view"
+	univaultoffice_permission_fill_forms   = "fillForms"
+	univaultoffice_permission_embedded     = "embedded"
+	univaultoffice_permission_blockcontent = "blockcontent"
+	univaultoffice_permission_filter       = "filter"
+	univaultoffice_permission_review       = "review"
+	univaultoffice_permission_comment      = "comment"
 )
 
 func NewDefaultDocumentManager(config config.ApplicationConfig, specification config.SpecificationConfig,
@@ -168,24 +168,24 @@ func (dm DefaultDocumentManager) BuildDocumentConfig(
 			},
 			Permissions: models.Permissions{
 				Chat: user.Id != "uid-1",
-				Comment: parameters.PermissionsMode != onlyoffice_permission_view &&
-					parameters.PermissionsMode != onlyoffice_permission_fill_forms &&
-					parameters.PermissionsMode != onlyoffice_permission_embedded &&
-					parameters.PermissionsMode != onlyoffice_permission_blockcontent,
+				Comment: parameters.PermissionsMode != univaultoffice_permission_view &&
+					parameters.PermissionsMode != univaultoffice_permission_fill_forms &&
+					parameters.PermissionsMode != univaultoffice_permission_embedded &&
+					parameters.PermissionsMode != univaultoffice_permission_blockcontent,
 				Copy:     !slices.Contains(user.DeniedPermissions, "copy"),
 				Download: true,
-				Edit: parameters.CanEdit && (parameters.PermissionsMode == onlyoffice_permission_edit ||
-					parameters.PermissionsMode == onlyoffice_permission_filter ||
-					parameters.PermissionsMode == onlyoffice_permission_blockcontent),
-				FillForms: parameters.PermissionsMode != onlyoffice_permission_view &&
-					parameters.PermissionsMode != onlyoffice_permission_comment &&
-					parameters.PermissionsMode != onlyoffice_permission_embedded &&
-					parameters.PermissionsMode != onlyoffice_permission_blockcontent,
-				ModifyFilter:         parameters.PermissionsMode != onlyoffice_permission_filter,
-				ModifyContentControl: parameters.PermissionsMode != onlyoffice_permission_blockcontent,
+				Edit: parameters.CanEdit && (parameters.PermissionsMode == univaultoffice_permission_edit ||
+					parameters.PermissionsMode == univaultoffice_permission_filter ||
+					parameters.PermissionsMode == univaultoffice_permission_blockcontent),
+				FillForms: parameters.PermissionsMode != univaultoffice_permission_view &&
+					parameters.PermissionsMode != univaultoffice_permission_comment &&
+					parameters.PermissionsMode != univaultoffice_permission_embedded &&
+					parameters.PermissionsMode != univaultoffice_permission_blockcontent,
+				ModifyFilter:         parameters.PermissionsMode != univaultoffice_permission_filter,
+				ModifyContentControl: parameters.PermissionsMode != univaultoffice_permission_blockcontent,
 				Print:                !slices.Contains(user.DeniedPermissions, "print"),
-				Review: parameters.PermissionsMode == onlyoffice_permission_edit ||
-					parameters.PermissionsMode == onlyoffice_permission_review,
+				Review: parameters.PermissionsMode == univaultoffice_permission_edit ||
+					parameters.PermissionsMode == univaultoffice_permission_review,
 				RewiewGroups:   user.ReviewGroups,
 				CommentGroups:  user.CommentGroups,
 				UserInfoGroups: user.UserInfoGroups,

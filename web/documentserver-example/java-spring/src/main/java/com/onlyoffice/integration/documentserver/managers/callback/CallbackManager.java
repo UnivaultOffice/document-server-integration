@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,9 +16,9 @@
  *
  */
 
-package com.onlyoffice.integration.documentserver.managers.callback;
+package com.univaultoffice.integration.documentserver.managers.callback;
 
-import com.onlyoffice.model.documenteditor.Callback;
+import com.univaultoffice.model.documenteditor.Callback;
 
 public interface CallbackManager {  // specify the callback manager functions
     void processEditing(Callback callback, String fileName);

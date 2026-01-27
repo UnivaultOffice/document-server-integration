@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,8 +18,8 @@
 package dhandlers
 
 import (
-	"github.com/ONLYOFFICE/document-server-integration/server/handlers"
-	"github.com/ONLYOFFICE/document-server-integration/server/models"
+	"github.com/UnivaultOffice/document-server-integration/server/handlers"
+	"github.com/UnivaultOffice/document-server-integration/server/models"
 	"go.uber.org/zap"
 )
 

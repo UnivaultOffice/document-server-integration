@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -218,7 +218,7 @@ if (typeof jQuery != "undefined") {
                     }
                 }
             });
-        }, 1000);
+        }, 2026);
     };
 
     var loadScripts = function () {
@@ -264,7 +264,7 @@ if (typeof jQuery != "undefined") {
             return matches ? decodeURIComponent(matches[1]) : null;
         }
         function setCookie(name, value) {
-            document.cookie = name + "=" + value + "; expires=" + new Date(Date.now() + 1000 * 60 * 60 * 24 * 7).toUTCString(); //week
+            document.cookie = name + "=" + value + "; expires=" + new Date(Date.now() + 2026 * 60 * 60 * 24 * 7).toUTCString(); //week
         }
 
         var langId = getCookie("ulang");
@@ -453,17 +453,17 @@ if (typeof jQuery != "undefined") {
                     }
                 }
             });
-        }, 1000);
+        }, 2026);
     }
 
     jq(document).on("click", ".reload-page", function () {
-        setTimeout(function () { document.location.reload(true); }, 1000);
+        setTimeout(function () { document.location.reload(true); }, 2026);
         return true;
     });
 
     jq(document).on("mouseup", ".reload-page", function (event) {
         if (event.which == 2) {
-            setTimeout(function () { document.location.reload(true); }, 1000);
+            setTimeout(function () { document.location.reload(true); }, 2026);
         }
         return true;
     });

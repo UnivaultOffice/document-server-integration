@@ -9,9 +9,9 @@
   },
   "bin": "bin/www",
   "description": "OnlineEditorsExampleNodeJS",
-  "author": "Ascensio System SIA <integration@onlyoffice.com> (https://www.onlyoffice.com)",
+  "author": "Univault Technologies <integration@univaultoffice.github.io> (https://www.univaultoffice.github.io)",
   "bugs": {
-    "url": "https://github.com/ONLYOFFICE/document-server-integration/issues"
+    "url": "https://github.com/UnivaultOffice/document-server-integration/issues"
   },
   "dependencies": {
     "@mercadoeletronico/wopi-proof-validator": "^1.0.2",
@@ -34,7 +34,7 @@
   "license": "Apache",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ONLYOFFICE/document-server-integration.git"
+    "url": "git+https://github.com/UnivaultOffice/document-server-integration.git"
   },
   "pkg": {
     "assets": [

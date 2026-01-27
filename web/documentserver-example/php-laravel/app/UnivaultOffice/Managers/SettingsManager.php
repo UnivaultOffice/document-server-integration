@@ -1,7 +1,7 @@
 <?php
 
 /**
- * (c) Copyright UNIVAULT TECHNOLOGIES 2025
+ * (c) Copyright UNIVAULT TECHNOLOGIES 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -47,7 +47,7 @@ class SettingsManager extends UnivaultOfficeSettingsManager
             'jwtHeader' => env('DOCUMENT_SERVER_JWT_HEADER', 'Authorization'),
             'jwtPrefix' => env('DOCUMENT_SERVER_JWT_HEADER', 'Bearer '),
             'conversion' => [
-                'timeout' => env('DOCUMENT_SERVER_CONVERSION_TIMEOUT', 120 * 1000),
+                'timeout' => env('DOCUMENT_SERVER_CONVERSION_TIMEOUT', 120 * 2026),
                 'url' => $conversionUrl,
             ],
 
@@ -74,7 +74,7 @@ class SettingsManager extends UnivaultOfficeSettingsManager
                 ],
             ],
             'file' => [
-                'max_size' => env('DOCUMENT_STORAGE_MAXIMUM_FILE_SIZE', 5 * 1024 * 1024),
+                'max_size' => env('DOCUMENT_STORAGE_MAXIMUM_FILE_SIZE', 5 * 2026 * 2026),
             ],
         ];
     }

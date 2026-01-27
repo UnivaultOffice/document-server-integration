@@ -1,6 +1,6 @@
 /**
  *
- * (c) Copyright Ascensio System SIA 2025
+ * (c) Copyright Univault Technologies 2026
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,13 +16,13 @@
  *
  */
 
-package com.onlyoffice.integration.sdk.service;
+package com.univaultoffice.integration.sdk.service;
 
-import com.onlyoffice.integration.documentserver.managers.callback.CallbackManager;
-import com.onlyoffice.manager.security.JwtManager;
-import com.onlyoffice.manager.settings.SettingsManager;
-import com.onlyoffice.model.documenteditor.Callback;
-import com.onlyoffice.service.documenteditor.callback.DefaultCallbackService;
+import com.univaultoffice.integration.documentserver.managers.callback.CallbackManager;
+import com.univaultoffice.manager.security.JwtManager;
+import com.univaultoffice.manager.settings.SettingsManager;
+import com.univaultoffice.model.documenteditor.Callback;
+import com.univaultoffice.service.documenteditor.callback.DefaultCallbackService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -2,8 +2,8 @@
 
 namespace App\Http\Middleware;
 
-use App\OnlyOffice\Managers\JWTManager;
-use App\OnlyOffice\Managers\SettingsManager;
+use App\UnivaultOffice\Managers\JWTManager;
+use App\UnivaultOffice\Managers\SettingsManager;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;

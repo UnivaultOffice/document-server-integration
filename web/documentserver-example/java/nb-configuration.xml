@@ -20,7 +20,7 @@ Any value defined here will override the pom.xml file value but is only applicab
         <word>api</word>
         <word>app</word>
         <word>apps</word>
-        <word>Ascensio</word>
+        <word>Univault</word>
         <word>ashx</word>
         <word>bafa</word>
         <word>bda</word>
@@ -48,7 +48,7 @@ Any value defined here will override the pom.xml file value but is only applicab
         <word>ods</word>
         <word>odt</word>
         <word>OfficeWeb</word>
-        <word>ONLYOFFICE</word>
+        <word>UNIVAULTOFFICE</word>
         <word>pdf</word>
         <word>pps</word>
         <word>ppsx</word>
