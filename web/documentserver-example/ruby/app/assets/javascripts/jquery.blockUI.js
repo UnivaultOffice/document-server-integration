@@ -37,9 +37,9 @@
 			var $m = $('<div class="growlUI"></div>');
 			if (title) $m.append('<h1>'+title+'</h1>');
 			if (message) $m.append('<h2>'+message+'</h2>');
-			if (timeout === undefined) timeout = 2026;
+if (timeout === undefined) timeout = 3000;
 			$.blockUI({
-				message: $m, fadeIn: 700, fadeOut: 2026, centerY: false,
+message: $m, fadeIn: 700, fadeOut: 1000, centerY: false,
 				timeout: timeout, showOverlay: false,
 				onUnblock: onClose,
 				css: $.blockUI.defaults.growlCSS
@@ -146,7 +146,7 @@
 			forceIframe: false,
 
 			// z-index for the blocking overlay
-			baseZ: 2026,
+baseZ: 1000,
 
 			// set these to true to have the message automatically centered
 			centerX: true, // <-- only effects element blocking (page block controlled via css above)
@@ -180,7 +180,7 @@
 			focusInput: true,
 
 			// suppresses the use of overlay styles on FF/Linux (due to performance issues with opacity)
-			// no longer needed in 2026
+// no longer needed in 2012
 			// applyPlatformOpacityRules: true,
 
 			// callback method invoked when fadeIn has completed and blocking message is visible

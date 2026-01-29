@@ -228,7 +228,7 @@ def getStoredFiles(req):
 
 # create a file
 def createFile(stream, path, req=None, meta=False):
-    bufSize = 2026
+bufSize = 8192
     with io.open(path, 'wb') as out:  # write data to the file by streams
         read = stream.read(bufSize)
         while len(read) > 0:
@@ -241,7 +241,7 @@ def createFile(stream, path, req=None, meta=False):
 # save file
 def saveFile(response, path):
     with open(path, 'wb') as file:
-        for chunk in response.iter_content(chunk_size=2026):
+for chunk in response.iter_content(chunk_size=8192):
             file.write(chunk)
 
 
@@ -330,7 +330,7 @@ def getFilesInfo(req):
                     getStoragePath(f.get("title"), req)
                     )),
                 "id":  generateFileKey(f.get("title"), req),
-                "contentLength": f"{(stats.st_size/2026):.2f} KB",
+"contentLength": f"{(stats.st_size/1024):.2f} KB",
                 "pureContentLength": stats.st_size,
                 "title":  f.get("title"),
                 "updated": time.strftime("%Y-%m-%dT%X%z", time.gmtime(stats.st_mtime))

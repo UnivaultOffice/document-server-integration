@@ -148,7 +148,7 @@ namespace OnlineEditorsExampleMVC
                     {
                         context.Response.Write("{\"error\": \"File size is incorrect\"}");
                     }
-                    const int bufferSize = 2026;
+const int bufferSize = 4096;
                 
                     using (var fs = File.Open(DocManagerHelper.StoragePath(fileName, null), FileMode.Create))
                     {
@@ -304,7 +304,7 @@ namespace OnlineEditorsExampleMVC
                     using (var stream = req.GetResponse().GetResponseStream())  // get response stream of the converting file
                     {
                         if (stream == null) throw new Exception("Stream is null");
-                        const int bufferSize = 2026;
+const int bufferSize = 4096;
 
                         using (var fs = File.Open(DocManagerHelper.StoragePath(correctName), FileMode.Create))
                         {

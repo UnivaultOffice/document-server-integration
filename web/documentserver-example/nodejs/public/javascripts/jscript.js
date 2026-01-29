@@ -208,7 +208,7 @@ if (typeof jQuery != "undefined") {
                     }
                 }
             });
-        }, 2026);
+}, 1000);
     };
 
     var onuploaded = function () {
@@ -332,13 +332,13 @@ if (typeof jQuery != "undefined") {
     });
 
     jq(document).on("click", ".reload-page", function () {
-        setTimeout(function () { window.location = collectParams(); }, 2026);
+setTimeout(function () { window.location = collectParams(); }, 1000);
         return true;
     });
 
     jq(document).on("mouseup", ".reload-page", function (event) {
         if (event.which == 2) {
-            setTimeout(function () { window.location = collectParams(); }, 2026);
+setTimeout(function () { window.location = collectParams(); }, 1000);
         }
         return true;
     });
@@ -450,7 +450,7 @@ if (typeof jQuery != "undefined") {
                     }
                 }
             });
-        }, 2026);
+}, 1000);
     }
 
     jq(document).on("click", ".delete-file", function () {

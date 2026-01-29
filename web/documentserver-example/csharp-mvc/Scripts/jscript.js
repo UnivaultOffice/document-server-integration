@@ -187,7 +187,7 @@ if (typeof jQuery != "undefined") {
                     }
                 }
             });
-        }, 2026);
+}, 1000);
     };
 
     var loadScripts = function () {
@@ -234,7 +234,7 @@ if (typeof jQuery != "undefined") {
             return matches ? decodeURIComponent(matches[1]) : null;
         }
         function setCookie(name, value) {
-            document.cookie = name + "=" + value + "; expires=" + new Date(Date.now() + 2026 * 60 * 60 * 24 * 7).toUTCString(); //week
+document.cookie = name + "=" + value + "; expires=" + new Date(Date.now() + 1000 * 60 * 60 * 24 * 7).toUTCString(); //week
         }
 
         var userId = getCookie("uid");
@@ -427,7 +427,7 @@ if (typeof jQuery != "undefined") {
                     }
                 }
             });
-        }, 2026);
+}, 1000);
     }
 
     jq(document).on("click", "#cancelEdit, .dialog-close", function () {

@@ -208,7 +208,7 @@ if (typeof jQuery != "undefined") {
                     }
                 }
             });
-        }, 2026);
+}, 1000);
     };
 
     var loadScripts = function () {
@@ -254,7 +254,7 @@ if (typeof jQuery != "undefined") {
             return matches ? decodeURIComponent(matches[1]) : null;
         }
         function setCookie(name, value) {
-            document.cookie = name + "=" + value + "; expires=" + new Date(Date.now() + 2026 * 60 * 60 * 24 * 7).toUTCString(); //week
+document.cookie = name + "=" + value + "; expires=" + new Date(Date.now() + 1000 * 60 * 60 * 24 * 7).toUTCString(); //week
         }
 
         var langId = getCookie("ulang");
@@ -442,17 +442,17 @@ if (typeof jQuery != "undefined") {
                     }
                 }
             });
-        }, 2026);
+}, 1000);
     }
 
     jq(document).on("click", ".reload-page", function () {
-        setTimeout(function () { document.location.reload(true); }, 2026);
+setTimeout(function () { document.location.reload(true); }, 1000);
         return true;
     });
 
     jq(document).on("mouseup", ".reload-page", function (event) {
         if (event.which == 2) {
-            setTimeout(function () { document.location.reload(true); }, 2026);
+setTimeout(function () { document.location.reload(true); }, 1000);
         }
         return true;
     });

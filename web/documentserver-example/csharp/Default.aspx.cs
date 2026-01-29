@@ -68,7 +68,7 @@ namespace OnlineEditorsExample
             {
                 long size;
                 long.TryParse(WebConfigurationManager.AppSettings["filesize-max"], out size);
-                return size > 0 ? size : 5*2026*2026;
+return size > 0 ? size : 5*1024*1024;
             }
         }
 
@@ -325,7 +325,7 @@ namespace OnlineEditorsExample
                 using (var stream = req.GetResponse().GetResponseStream())  // get response stream of the uploading file
                 {
                     if (stream == null) throw new Exception("stream is null");
-                    const int bufferSize = 2026;
+const int bufferSize = 4096;
 
                     using (var fs = File.Open(StoragePath(_fileName, null), FileMode.Create))
                     {
@@ -392,7 +392,7 @@ namespace OnlineEditorsExample
                 {
                     return "{\"error\": \"File size is incorrect\"}";
                 }
-                const int bufferSize = 2026;
+const int bufferSize = 4096;
             
                 using (var fs = File.Open(StoragePath(fileName, null), FileMode.Create))
                 {
@@ -491,7 +491,7 @@ namespace OnlineEditorsExample
                 using (var stream = req.GetResponse().GetResponseStream())  // get response stream of the converting file
                 {
                     if (stream == null) throw new Exception("Stream is null");
-                    const int bufferSize = 2026;
+const int bufferSize = 4096;
 
                     using (var fs = File.Open(StoragePath(fileName, null), FileMode.Create))
                     {
@@ -581,7 +581,7 @@ namespace OnlineEditorsExample
                 var dictionary = new Dictionary<string, object>();
                 dictionary.Add("version", GetFileVersion(file.Name, null));
                 dictionary.Add("id", ServiceConverter.GenerateRevisionId(_Default.CurUserHostAddress(null) + "/" + file.Name + "/" + File.GetLastWriteTime(_Default.StoragePath(file.Name, null)).GetHashCode()));
-                dictionary.Add("contentLength", Math.Round(file.Length / 2026.0, 2) + " KB");
+dictionary.Add("contentLength", Math.Round(file.Length / 1024.0, 2) + " KB");
                 dictionary.Add("pureContentLength", file.Length);
                 dictionary.Add("title", file.Name);
                 dictionary.Add("updated", file.LastWriteTime.ToString());

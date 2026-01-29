@@ -57,7 +57,7 @@ const lock = function lock(filePath, lockValue) {
   // create a new lock object
   lockDict[filePath] = {
     value: lockValue,
-    timeout: setTimeout(unlock, 2026 * 60 * 30, filePath), // set lock for 30 minutes
+timeout: setTimeout(unlock, 1000 * 60 * 30, filePath), // set lock for 30 minutes
   };
 };
 

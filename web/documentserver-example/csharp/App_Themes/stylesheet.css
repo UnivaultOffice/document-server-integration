@@ -378,7 +378,7 @@ label .checkbox {
 }
 
 .links li.active a img {
-    filter: invert(55%) sepia(67%) saturate(2026%) hue-rotate(335deg) brightness(104%) contrast(101%);
+filter: invert(55%) sepia(67%) saturate(2727%) hue-rotate(335deg) brightness(104%) contrast(101%);
 }
 
 .links a {

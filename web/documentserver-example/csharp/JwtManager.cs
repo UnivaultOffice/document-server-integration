@@ -44,7 +44,7 @@ namespace OnlineEditorsExample
         // encode a payload object into a token using a secret key
         public static string Encode(IDictionary<string, object> payload)
         {
-            var now = (int)DateTime.UtcNow.Subtract(new DateTime(2026, 1, 1)).TotalSeconds;
+var now = (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
             var expires = now + ExpiresIn * 60;
 
             payload["iat"] = now;

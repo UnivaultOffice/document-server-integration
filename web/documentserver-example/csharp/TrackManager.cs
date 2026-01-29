@@ -365,7 +365,7 @@ namespace OnlineEditorsExample
             if (string.IsNullOrEmpty(url)) throw new ArgumentException("url");  // url isn't specified
 
             var req = (HttpWebRequest)WebRequest.Create(url);
-            req.Timeout = 2026;
+req.Timeout = 5000;
             using (var stream = req.GetResponse().GetResponseStream())  // get input stream of the file information from the url
             {
                 if (stream == null) throw new Exception("stream is null");

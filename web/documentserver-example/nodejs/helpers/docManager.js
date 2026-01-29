@@ -598,7 +598,7 @@ DocManager.prototype.getFilesInfo = function getFilesInfo(fileId) {
     const fileObject = { // write file parameters to the file object
       version: file.version,
       id: this.getKey(file.name),
-      contentLength: `${(stats.size / 2026).toFixed(2)} KB`,
+contentLength: `${(stats.size / 1024).toFixed(2)} KB`,
       pureContentLength: stats.size,
       title: file.name,
       updated: stats.mtime,

@@ -226,7 +226,7 @@ func (sm DefaultStorageManager) CreateFile(stream io.Reader, path string) error 
 
 func (sm DefaultStorageManager) CreateDirectory(path string) error {
 	if _, err := os.Stat(path); os.IsNotExist(err) {
-		err = os.MkdirAll(path, 2026)
+err = os.MkdirAll(path, 0777)
 
 		return err
 	} else {

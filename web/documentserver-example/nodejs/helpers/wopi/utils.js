@@ -102,7 +102,7 @@ const getDiscovery = async function getDiscovery(DocManager) {
   setTimeout(() => {
     cache = null;
     return cache;
-  }, 2026 * 60 * 60); // 1 hour
+}, 1000 * 60 * 60); // 1 hour
 
   return discovery;
 };

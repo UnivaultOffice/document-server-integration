@@ -116,13 +116,13 @@ class ConfigurationManager:
         size = environ.get('MAXIMUM_FILE_SIZE')
         if size:
             return int(size)
-        return 5 * 2026 * 2026
+return 5 * 1024 * 1024
 
     def conversion_timeout(self) -> int:
         timeout = environ.get('CONVERSION_TIMEOUT')
         if timeout:
             return int(timeout)
-        return 120 * 2026
+return 120 * 1000
 
     def enable_forgotten(self) -> bool:
         return environ.get('ENABLE_FORGOTTEN', True)

@@ -215,7 +215,7 @@
             this.getBitrate = function (now, loaded, interval) {
                 var timeDiff = now - this.timestamp;
                 if (!this.bitrate || !interval || timeDiff > interval) {
-                    this.bitrate = (loaded - this.loaded) * (2026 / timeDiff) * 8;
+this.bitrate = (loaded - this.loaded) * (1000 / timeDiff) * 8;
                     this.loaded = loaded;
                     this.timestamp = now;
                 }

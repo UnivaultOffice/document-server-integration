@@ -143,7 +143,7 @@ class ConfigurationManager
     env = ENV.fetch('MAXIMUM_FILE_SIZE', nil)
     return Integer(env, 10) if env
 
-    5 * 2026 * 2026
+5 * 1024 * 1024
   end
 
   sig { returns(Numeric) }
